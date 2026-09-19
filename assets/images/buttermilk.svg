@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECFDF5" />
+      <stop offset="100%" stop-color="#D1FAE5" />
+    </linearGradient>
+    <linearGradient id="clayGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+    <filter id="bmShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#047857" flood-opacity="0.14" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bmBg)" />
+  <circle cx="200" cy="150" r="105" fill="#FFFFFF" fill-opacity="0.8" />
+
+  <!-- Earthen Kulhad / Glass with Spiced Buttermilk -->
+  <g transform="translate(140, 50)" filter="url(#bmShadow)">
+    <!-- Base Shadow -->
+    <ellipse cx="60" cy="195" rx="42" ry="10" fill="#047857" opacity="0.25" />
+    
+    <!-- Kulhad (Clay Tumbler) Body -->
+    <path d="M22 60 L38 185 C40 192 48 198 60 198 C72 198 80 192 82 185 L98 60 Z" fill="url(#clayGlass)" stroke="#78350F" stroke-width="1.5" />
+    
+    <!-- Clay Grooves / Ribs -->
+    <path d="M26 90 Q60 100 94 90" stroke="#B45309" stroke-width="2" fill="none" />
+    <path d="M30 125 Q60 135 90 125" stroke="#B45309" stroke-width="2" fill="none" />
+    <path d="M34 160 Q60 168 86 160" stroke="#B45309" stroke-width="2" fill="none" />
+
+    <!-- Frothy Chhachh Top -->
+    <ellipse cx="60" cy="60" rx="38" ry="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+    <!-- Cream froth bubbles -->
+    <circle cx="45" cy="58" r="5" fill="#FFFFFF" />
+    <circle cx="58" cy="56" r="6" fill="#FFFFFF" />
+    <circle cx="72" cy="59" r="4.5" fill="#FFFFFF" />
+    <circle cx="50" cy="63" r="3.5" fill="#FFFFFF" />
+    <circle cx="65" cy="62" r="4" fill="#FFFFFF" />
+
+    <!-- Spices Garnish (Cumin powder & coriander specks) -->
+    <circle cx="48" cy="57" r="1" fill="#78350F" />
+    <circle cx="62" cy="58" r="1.2" fill="#78350F" />
+    <circle cx="70" cy="60" r="1" fill="#78350F" />
+    <circle cx="54" cy="60" r="1" fill="#16A34A" />
+    <circle cx="58" cy="54" r="1.2" fill="#16A34A" />
+
+    <!-- Fresh Mint Leaves resting on rim -->
+    <g transform="translate(68, 42)">
+      <path d="M0 12 C-6 2 4 -2 8 6 C9 10 3 13 0 12 Z" fill="#16A34A" />
+      <path d="M5 8 C10 0 18 3 14 11 C12 14 6 12 5 8 Z" fill="#22C55E" />
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(20, 20)">
+    <rect width="130" height="30" rx="15" fill="#047857" />
+    <text x="65" y="20" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">COOL &amp; DIGESTIVE</text>
+  </g>
+</svg>

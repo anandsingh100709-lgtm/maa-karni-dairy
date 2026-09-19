@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none" aria-label="Maa Karni Dhari Logo">
+  <defs>
+    <linearGradient id="logoGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A34A" />
+      <stop offset="100%" stop-color="#14532D" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Emblem -->
+  <g transform="translate(6, 4)" filter="url(#shadow)">
+    <circle cx="26" cy="26" r="25" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
+    <circle cx="26" cy="26" r="22" fill="url(#logoGreen)"/>
+    
+    <!-- Cow Silhouette and Milk Drop Motif -->
+    <path d="M19 32 C18 27 20 23 26 23 C32 23 34 27 33 32 Z" fill="#FFFFFF"/>
+    <path d="M26 15 C26 15 21 21 21 24 C21 26.8 23.2 29 26 29 C28.8 29 31 26.8 31 24 C31 21 26 15 26 15 Z" fill="#FEF08A"/>
+    <!-- Horns / Ears delicate curve -->
+    <path d="M19 23 C17 19 16 18 14 18 C15 20 17 22 18 23 Z" fill="#FFFFFF"/>
+    <path d="M33 23 C35 19 36 18 38 18 C37 20 35 22 34 23 Z" fill="#FFFFFF"/>
+    <!-- Star/Purity Dot -->
+    <circle cx="26" cy="24" r="1.5" fill="#14532D"/>
+  </g>
+
+  <!-- Text: Brand Name & Subtext -->
+  <text x="68" y="27" font-family="'Poppins', sans-serif" font-size="19" font-weight="700" fill="#0F2E1B" letter-spacing="-0.3">
+    Maa Karni Dhari
+  </text>
+  <text x="68" y="44" font-family="'Mukta', sans-serif" font-size="13" font-weight="600" fill="#15803D" letter-spacing="0.2">
+    शुद्धता और स्वाद का भरोसा • Malpura
+  </text>
+</svg>

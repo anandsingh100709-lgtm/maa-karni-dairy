@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="curdBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="100%" stop-color="#FEF3C7" />
+    </linearGradient>
+    <filter id="cShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#92400E" flood-opacity="0.14" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#curdBg)" />
+  <circle cx="200" cy="150" r="105" fill="#FFFFFF" fill-opacity="0.8" />
+
+  <!-- Earthen Matka with Thick Dahi -->
+  <g transform="translate(125, 60)" filter="url(#cShadow)">
+    <!-- Base shadow -->
+    <ellipse cx="75" cy="175" rx="60" ry="12" fill="#D97706" opacity="0.3" />
+    <!-- Earthen Matka Pot Body -->
+    <ellipse cx="75" cy="115" rx="65" ry="58" fill="#B45309" />
+    <path d="M15 110 C15 168 135 168 135 110 C135 80 115 65 75 65 C35 65 15 80 15 110 Z" fill="#D97706" />
+    <!-- Pot Neck & Rim -->
+    <ellipse cx="75" cy="65" rx="46" ry="16" fill="#92400E" />
+    <ellipse cx="75" cy="62" rx="42" ry="14" fill="#B45309" />
+    <!-- Pure White Thick Curd -->
+    <ellipse cx="75" cy="60" rx="38" ry="12" fill="#FFFFFF" />
+    <path d="M52 64 Q62 78 70 66 Q80 76 92 64" fill="#F8FAFC" />
+    <!-- Mint sprig garnish -->
+    <path d="M75 52 C70 42 82 40 85 48 C86 52 78 54 75 52 Z" fill="#16A34A" />
+    <path d="M70 54 C63 48 66 38 74 42 C76 46 72 52 70 54 Z" fill="#22C55E" />
+    <!-- Traditional Warli / Tribal decorative line on pot -->
+    <path d="M30 110 Q75 125 120 110" stroke="#FDE68A" stroke-width="2" stroke-dasharray="4,4" fill="none" />
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(20, 20)">
+    <rect width="130" height="30" rx="15" fill="#D97706" />
+    <text x="65" y="20" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">PURE &amp; THICK</text>
+  </g>
+</svg>

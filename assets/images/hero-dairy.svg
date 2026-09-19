@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0FDF4" />
+      <stop offset="50%" stop-color="#DCFCE7" />
+      <stop offset="100%" stop-color="#FEF9C3" />
+    </linearGradient>
+    <linearGradient id="milkWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EFF6FF" />
+    </linearGradient>
+    <linearGradient id="bottleGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#DBEAFE" stop-opacity="0.5" />
+    </linearGradient>
+    <linearGradient id="greenPlant" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#15803D" />
+    </linearGradient>
+    <linearGradient id="goldGhee" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#15803D" flood-opacity="0.12" />
+    </filter>
+    <filter id="elementShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F2E1B" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background decorative circular glow -->
+  <circle cx="300" cy="250" r="220" fill="url(#bgGrad)" />
+  <circle cx="300" cy="250" r="180" fill="#FFFFFF" fill-opacity="0.6" />
+
+  <!-- Rolling Pastoral Pasture Hills -->
+  <path d="M70 410 C160 360 230 385 340 375 C450 365 510 395 540 420 L540 450 L70 450 Z" fill="#BBF7D0" fill-opacity="0.7" />
+  <path d="M50 430 C180 390 320 410 420 395 C490 385 530 405 560 440 L560 470 L50 470 Z" fill="#86EFAC" fill-opacity="0.8" />
+
+  <!-- Sun Rays Accent -->
+  <circle cx="450" cy="140" r="45" fill="#FEF08A" fill-opacity="0.7" filter="url(#softGlow)" />
+  <circle cx="450" cy="140" r="32" fill="#FDE047" fill-opacity="0.9" />
+
+  <!-- Wooden Cutting Platter / Table Base -->
+  <ellipse cx="300" cy="425" rx="210" ry="40" fill="#E2E8F0" opacity="0.6" />
+  <ellipse cx="300" cy="420" rx="195" ry="32" fill="#FEF3C7" stroke="#D97706" stroke-width="2" />
+
+  <!-- Traditional Earthen / Ceramic Matka for Curd (Left) -->
+  <g transform="translate(130, 270)" filter="url(#elementShadow)">
+    <!-- Pot Body -->
+    <ellipse cx="55" cy="50" rx="45" ry="40" fill="#CA8A04" />
+    <path d="M12 45 C15 85 95 85 98 45 C100 25 80 18 55 18 C30 18 10 25 12 45 Z" fill="#D97706" />
+    <ellipse cx="55" cy="20" rx="32" ry="10" fill="#B45309" />
+    <!-- Fresh Creamy Dahi filling overflowing -->
+    <ellipse cx="55" cy="18" rx="28" ry="8" fill="url(#milkWhite)" />
+    <path d="M42 22 Q48 35 52 24 Q56 32 60 22" fill="#FFFFFF" />
+    <!-- Mint leaves decoration -->
+    <path d="M55 12 C50 4 62 2 64 10 C65 14 57 15 55 12 Z" fill="#16A34A" />
+    <path d="M50 14 C43 10 46 0 54 4 C56 8 52 13 50 14 Z" fill="#22C55E" />
+    <text x="55" y="65" font-family="'Mukta', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">ताज़ा दही</text>
+  </g>
+
+  <!-- Tall Glass Milk Bottle with Pouring Cream (Center) -->
+  <g transform="translate(250, 150)" filter="url(#elementShadow)">
+    <!-- Bottle Shape -->
+    <!-- Cap -->
+    <rect x="35" y="10" width="30" height="12" rx="4" fill="#15803D" />
+    <rect x="30" y="22" width="40" height="6" rx="2" fill="#16A34A" />
+    <!-- Neck -->
+    <path d="M36 28 L36 60 C36 80 15 100 15 130 L15 240 C15 255 25 265 50 265 C75 265 85 255 85 240 L85 130 C85 100 64 80 64 60 L64 28 Z" fill="url(#milkWhite)" stroke="#CBD5E1" stroke-width="2" />
+    
+    <!-- Milk Level & Fluid Motion inside bottle -->
+    <path d="M17 125 C30 120 40 135 60 128 C75 122 83 125 83 130 L83 240 C83 253 74 263 50 263 C26 263 17 253 17 240 Z" fill="#FFFFFF" />
+    <!-- Glass Highlights -->
+    <path d="M22 135 L22 235" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+    <path d="M78 135 L78 235" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    <!-- Label on Bottle -->
+    <rect x="25" y="155" width="50" height="50" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5" />
+    <circle cx="50" cy="175" r="10" fill="#15803D" />
+    <path d="M50 168 C50 168 46 174 46 176 C46 178 48 180 50 180 C52 180 54 178 54 176 C54 174 50 168 50 168 Z" fill="#FEF08A" />
+    <text x="50" y="197" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#14532D" text-anchor="middle">PURE MILK</text>
+  </g>
+
+  <!-- Glass Tumbler of Pure Milk (Front-Right Center) -->
+  <g transform="translate(340, 270)" filter="url(#elementShadow)">
+    <path d="M15 15 L25 130 C26 138 33 145 45 145 C57 145 64 138 65 130 L75 15 Z" fill="url(#milkWhite)" stroke="#94A3B8" stroke-width="1.5" />
+    <!-- Froth on top -->
+    <ellipse cx="45" cy="18" rx="29" ry="8" fill="#FFFFFF" stroke="#E2E8F0" />
+    <circle cx="36" cy="17" r="3" fill="#FFFFFF" />
+    <circle cx="45" cy="15" r="4" fill="#FFFFFF" />
+    <circle cx="54" cy="18" r="3.5" fill="#FFFFFF" />
+    <!-- Splashing Milk Drops -->
+    <circle cx="45" cy="-5" r="4" fill="#FFFFFF" filter="url(#softGlow)" />
+    <circle cx="60" cy="2" r="3" fill="#FFFFFF" />
+    <circle cx="30" cy="4" r="2.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Golden Brass/Glass Pot of Pure Desi Ghee (Right) -->
+  <g transform="translate(420, 280)" filter="url(#elementShadow)">
+    <ellipse cx="50" cy="45" rx="38" ry="32" fill="url(#goldGhee)" />
+    <path d="M15 45 C15 78 85 78 85 45 C85 28 70 22 50 22 C30 22 15 28 15 45 Z" fill="url(#goldGhee)" stroke="#B45309" stroke-width="1.5" />
+    <ellipse cx="50" cy="25" rx="28" ry="9" fill="#FEF08A" />
+    <!-- Golden Ghee Sheen -->
+    <ellipse cx="50" cy="26" rx="22" ry="6" fill="#FBBF24" />
+    <!-- Brass Spoon dipping -->
+    <path d="M50 24 L75 -5 C77 -7 81 -5 80 -2 L58 26 Z" fill="#D97706" />
+    <ellipse cx="52" cy="25" rx="7" ry="4" fill="#F59E0B" />
+    <text x="50" y="60" font-family="'Mukta', sans-serif" font-size="12" font-weight="700" fill="#78350F" text-anchor="middle">शुद्ध देसी घी</text>
+  </g>
+
+  <!-- Floating Quality Guarantee Badge -->
+  <g transform="translate(60, 110)" filter="url(#softGlow)">
+    <rect x="0" y="0" width="160" height="60" rx="30" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" />
+    <circle cx="30" cy="30" r="20" fill="#16A34A" />
+    <!-- Checkmark SVG -->
+    <path d="M22 30 L27 35 L38 23" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="60" y="27" font-family="'Poppins', sans-serif" font-size="12" font-weight="700" fill="#0F2E1B">100% PURE</text>
+    <text x="60" y="44" font-family="'Mukta', sans-serif" font-size="12" font-weight="600" fill="#16A34A">शुद्धता की गारंटी</text>
+  </g>
+
+  <!-- Floating Malpura Local Delivery Badge -->
+  <g transform="translate(390, 80)" filter="url(#softGlow)">
+    <rect x="0" y="0" width="165" height="54" rx="27" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5" />
+    <circle cx="28" cy="27" r="18" fill="#DCFCE7" />
+    <!-- Truck SVG Icon -->
+    <path d="M20 28 L23 21 L31 21 L33 28 Z M33 24 L36 28" stroke="#15803D" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+    <circle cx="23" cy="32" r="3" fill="#15803D"/>
+    <circle cx="33" cy="32" r="3" fill="#15803D"/>
+    <text x="54" y="24" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#0F2E1B">Malpura Express</text>
+    <text x="54" y="40" font-family="'Mukta', sans-serif" font-size="12" font-weight="600" fill="#15803D">ताज़ा होम डिलीवरी</text>
+  </g>
+</svg>

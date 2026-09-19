@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="milkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0FDF4" />
+      <stop offset="100%" stop-color="#DCFCE7" />
+    </linearGradient>
+    <filter id="pShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#14532D" flood-opacity="0.12" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#milkBg)" />
+  <circle cx="200" cy="150" r="105" fill="#FFFFFF" fill-opacity="0.7" />
+  
+  <!-- Milk Bottle and Glass Graphic -->
+  <g transform="translate(130, 45)" filter="url(#pShadow)">
+    <!-- Tall Glass Bottle -->
+    <path d="M45 25 L45 50 C45 68 25 85 25 110 L25 210 C25 220 33 228 55 228 C77 228 85 220 85 210 L85 110 C85 85 65 68 65 50 L65 25 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="44" y="12" width="22" height="13" rx="3" fill="#15803D" />
+    <path d="M27 105 C38 100 48 112 65 106 C75 102 83 105 83 108 L83 210 C83 218 76 226 55 226 C34 226 27 218 27 210 Z" fill="#F8FAFC" />
+    <!-- Natural Leaf Accent on Bottle -->
+    <circle cx="55" cy="150" r="18" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5" />
+    <path d="M55 140 C55 140 48 147 48 152 C48 156 51 159 55 159 C59 159 62 156 62 152 C62 147 55 140 55 140 Z" fill="#22C55E" />
+    
+    <!-- Fresh Milk Glass (Right) -->
+    <path d="M95 130 L102 220 C103 226 109 230 118 230 C127 230 133 226 134 220 L141 130 Z" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+    <ellipse cx="118" cy="132" rx="22" ry="6" fill="#F1F5F9" />
+    <circle cx="112" cy="132" r="3" fill="#FFFFFF" />
+    <circle cx="124" cy="133" r="2.5" fill="#FFFFFF" />
+    <!-- Splashes -->
+    <circle cx="118" cy="115" r="3.5" fill="#FFFFFF" />
+    <circle cx="128" cy="120" r="2" fill="#FFFFFF" />
+    <circle cx="106" cy="122" r="2" fill="#FFFFFF" />
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(20, 20)">
+    <rect width="130" height="30" rx="15" fill="#15803D" />
+    <text x="65" y="20" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">COW &amp; BUFFALO</text>
+  </g>
+</svg>
