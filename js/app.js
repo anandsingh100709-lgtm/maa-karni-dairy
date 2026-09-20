@@ -462,8 +462,8 @@
         const isOpen = elements.mobileDrawer.classList.toggle('open');
         elements.hamburgerBtn.setAttribute('aria-expanded', isOpen);
         elements.hamburgerBtn.innerHTML = isOpen
-          ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>'
-          : '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg><span>' + (state.currentLang === 'hi' ? 'बंद' : 'Close') + '</span>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg><span>' + (state.currentLang === 'hi' ? 'मेनू' : 'Menu') + '</span>';
       });
 
       // Close mobile drawer on link click
@@ -471,7 +471,7 @@
         link.addEventListener('click', () => {
           elements.mobileDrawer.classList.remove('open');
           elements.hamburgerBtn.setAttribute('aria-expanded', 'false');
-          elements.hamburgerBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+          elements.hamburgerBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg><span>' + (state.currentLang === 'hi' ? 'मेनू' : 'Menu') + '</span>';
         });
       });
 
@@ -525,6 +525,16 @@
         }
       });
     }
+
+    // 2. Highlight quick page-nav-strip pills and mobile bottom app bar tabs
+    document.querySelectorAll('.page-nav-pill, .bottom-tab').forEach((link) => {
+      const href = link.getAttribute('href');
+      if (href && (href === currentPage || (currentPage === '' && href === 'index.html'))) {
+        link.classList.add('active');
+      } else if (href && !href.startsWith('#')) {
+        link.classList.remove('active');
+      }
+    });
 
     // 2. ScrollSpy for on-page sections if present
     if (elements.sections && elements.sections.length > 0 && ('IntersectionObserver' in window)) {

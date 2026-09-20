@@ -79,11 +79,12 @@
 
         <!-- Mobile Toggle -->
         <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
+          <span data-i18n="nav_menu_btn">मेनू</span>
         </button>
       </div>
     </div>
@@ -117,6 +118,18 @@
       </div>
     </div>
   </header>
+
+  <!-- Quick Page Access Navigation Strip -->
+  <nav class="page-nav-strip" aria-label="वेबसाइट पेज चुनें">
+    <div class="page-nav-track">
+      <a href="index.html" class="page-nav-pill"><span class="nav-pill-icon">🏠</span> <span data-i18n="nav_home">होम</span></a>
+      <a href="products.html" class="page-nav-pill"><span class="nav-pill-icon">🥛</span> <span data-i18n="nav_products">डेयरी उत्पाद</span></a>
+      <a href="farm.html" class="page-nav-pill"><span class="nav-pill-icon">🌿</span> <span data-i18n="nav_farm">हमारा फ़ार्म</span></a>
+      <a href="bulk.html" class="page-nav-pill"><span class="nav-pill-icon">🏢</span> <span data-i18n="nav_bulk">बल्क ऑर्डर्स</span></a>
+      <a href="payment.html" class="page-nav-pill"><span class="nav-pill-icon">💳</span> <span data-i18n="nav_payment">पेमेंट</span></a>
+      <a href="contact.html" class="page-nav-pill active"><span class="nav-pill-icon">📞</span> <span data-i18n="nav_contact">संपर्क व लोकेशन</span></a>
+    </div>
+  </nav>
 
   <main id="mainContent">
 
@@ -255,6 +268,16 @@
           </div>
         </div>
       </div>
+    <!-- Next Page Card back to Home -->
+    <section class="container" style="margin-bottom: 30px;">
+      <div class="next-page-card">
+        <span class="next-page-badge">👉 अगला पेज (Next Page)</span>
+        <h3 class="next-page-title">🏠 मुख्य पेज (Home Page)</h3>
+        <p class="next-page-desc">माँ करणी दूध डेयरी के मुख्य पृष्ठ पर वापस जाएँ और हमारी सभी ताज़ा सेवाओं को देखें।</p>
+        <a href="index.html" class="btn-next-page-cta">
+          <span>होम पेज खोलें (Go to Home Page)</span> ➔
+        </a>
+      </div>
     </section>
 
   </main>
@@ -309,21 +332,33 @@
     </div>
   </footer>
 
-  <!-- Sticky Mobile Action Bar -->
-  <aside class="sticky-action-bar" aria-label="Quick Mobile Actions">
-    <a href="#" class="sticky-btn sticky-btn-whatsapp whatsapp-general-link">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.782-.736-2.924-2.548-3.013-2.667-.088-.119-.724-.963-.724-1.836 0-.872.458-1.303.621-1.48.163-.178.356-.222.474-.222.119 0 .237.002.34.007.108.005.253-.041.396.302.147.356.505 1.233.549 1.322.045.089.074.193.015.312-.059.119-.089.193-.178.297-.089.104-.187.233-.267.312-.089.089-.182.186-.078.365.104.178.461.761 1.006 1.246.702.626 1.292.82 1.47.894.178.074.282.059.386-.059.104-.119.445-.519.564-.697.119-.178.237-.149.396-.089.159.059 1.009.475 1.182.562.173.087.288.131.331.205.044.074.044.43-.1 1.007z"/>
-      </svg>
-      <span data-i18n="sticky_whatsapp">WhatsApp Order</span>
+  <!-- Mobile Bottom App Navigation Bar -->
+  <nav class="mobile-bottom-app-bar" aria-label="Mobile Navigation Bar">
+    <a href="index.html" class="bottom-tab">
+      <span class="bottom-tab-icon">🏠</span>
+      <span class="bottom-tab-label" data-i18n="nav_home">होम</span>
     </a>
-    <a href="tel:+918209931769" class="sticky-btn sticky-btn-call phone-call-link">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-      </svg>
-      <span data-i18n="sticky_call">Call Now</span>
+    <a href="products.html" class="bottom-tab">
+      <span class="bottom-tab-icon">🥛</span>
+      <span class="bottom-tab-label" data-i18n="nav_products">उत्पाद</span>
     </a>
-  </aside>
+    <a href="farm.html" class="bottom-tab">
+      <span class="bottom-tab-icon">🌿</span>
+      <span class="bottom-tab-label" data-i18n="nav_farm">फ़ार्म</span>
+    </a>
+    <a href="bulk.html" class="bottom-tab">
+      <span class="bottom-tab-icon">🏢</span>
+      <span class="bottom-tab-label" data-i18n="nav_bulk">थोक</span>
+    </a>
+    <a href="payment.html" class="bottom-tab">
+      <span class="bottom-tab-icon">💳</span>
+      <span class="bottom-tab-label" data-i18n="nav_payment">पेमेंट</span>
+    </a>
+    <a href="contact.html" class="bottom-tab active">
+      <span class="bottom-tab-icon">📞</span>
+      <span class="bottom-tab-label" data-i18n="nav_contact">संपर्क</span>
+    </a>
+  </nav>
 
   <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
 
