@@ -857,31 +857,61 @@ button {
 }
 
 /* Hero Feature Highlight Chips */
-.hero-highlights {
+.hero-highlights,
+.hero-features-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 14px;
+  gap: 12px;
+  margin-top: 18px;
 }
 
-.highlight-chip {
+.highlight-chip,
+.hero-feature-pill {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 14px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid var(--color-primary-tint);
+  padding: 8px 18px;
+  background-color: #ffffff;
+  border: 1.5px solid var(--color-primary-tint);
   border-radius: var(--radius-full);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--color-primary-deep);
   box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
 }
 
-.highlight-chip svg {
-  width: 18px;
-  height: 18px;
-  color: var(--color-primary);
+.highlight-chip:hover,
+.hero-feature-pill:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.highlight-chip svg,
+.hero-feature-pill svg {
+  display: none !important;
+}
+
+.pill-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.delivery-bullet-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  background-color: #DCFCE7;
+  color: #15803D;
+  font-weight: 800;
+  font-size: 0.85rem;
+  line-height: 1;
 }
 
 .hero-visual {
@@ -2390,6 +2420,75 @@ button {
 
   .location-card {
     padding: 24px 18px;
+  }
+}
+
+/* ==========================================================================
+   Subpage Hero Banner & Breadcrumbs (Multi-Page Architecture)
+   ========================================================================== */
+.subpage-hero {
+  padding: 42px 0 34px;
+  background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-bg) 100%);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 36px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs a {
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+
+.breadcrumbs span.current {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+.subpage-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.subpage-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-body);
+  max-width: 680px;
+}
+
+@media (max-width: 768px) {
+  .subpage-hero {
+    padding: 28px 0 24px;
+    margin-bottom: 24px;
+  }
+  .subpage-title {
+    font-size: 1.7rem;
+  }
+  .subpage-desc {
+    font-size: 0.95rem;
   }
 }
 

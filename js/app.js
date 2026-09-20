@@ -77,8 +77,8 @@
     // 6. Setup Event Listeners
     setupEventListeners();
 
-    // 7. Setup Scroll Spy for navigation
-    setupScrollSpy();
+    // 7. Setup Active Nav highlighting (Multi-Page & Scroll)
+    setupActiveNav();
   }
 
   /**
@@ -497,33 +497,71 @@
   }
 
   /**
-   * Active link highlighting on scroll (ScrollSpy)
+   * Active link highlighting based on current page URL & section scroll
    */
-  function setupScrollSpy() {
-    if (!('IntersectionObserver' in window)) return;
+  function setupActiveNav() {
+    const rawPath = window.location.pathname.toLowerCase();
+    const currentPage = rawPath.substring(rawPath.lastIndexOf('/') + 1) || 'index.html';
 
-    const observerOptions = {
-      root: null,
-      rootMargin: '-20% 0px -70% 0px',
-      threshold: 0
-    };
+    // 1. Highlight link matching current file
+    let pageMatched = false;
+    elements.navLinks.forEach((link) => {
+      const href = link.getAttribute('href');
+      if (href && (href === currentPage || (currentPage === '' && href === 'index.html'))) {
+        link.classList.add('active');
+        pageMatched = true;
+      } else if (href && !href.startsWith('#')) {
+        link.classList.remove('active');
+      }
+    });
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute('id');
-          elements.navLinks.forEach((link) => {
-            if (link.getAttribute('href') === `#${id}`) {
-              link.classList.add('active');
-            } else {
-              link.classList.remove('active');
-            }
-          });
+    if (elements.mobileNavLinks) {
+      elements.mobileNavLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href && (href === currentPage || (currentPage === '' && href === 'index.html'))) {
+          link.classList.add('active');
+        } else if (href && !href.startsWith('#')) {
+          link.classList.remove('active');
         }
       });
-    }, observerOptions);
+    }
 
-    elements.sections.forEach((section) => observer.observe(section));
+    // 2. ScrollSpy for on-page sections if present
+    if (elements.sections && elements.sections.length > 0 && ('IntersectionObserver' in window)) {
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            elements.navLinks.forEach((link) => {
+              const href = link.getAttribute('href');
+              if (href === `#${id}` || href === `index.html#${id}`) {
+                link.classList.add('active');
+              } else if (href && href.startsWith('#')) {
+                link.classList.remove('active');
+              }
+            });
+            if (elements.mobileNavLinks) {
+              elements.mobileNavLinks.forEach((link) => {
+                const href = link.getAttribute('href');
+                if (href === `#${id}` || href === `index.html#${id}`) {
+                  link.classList.add('active');
+                } else if (href && href.startsWith('#')) {
+                  link.classList.remove('active');
+                }
+              });
+            }
+          }
+        });
+      }, observerOptions);
+
+      elements.sections.forEach((section) => observer.observe(section));
+    }
   }
 
   /**

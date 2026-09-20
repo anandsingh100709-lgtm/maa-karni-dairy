@@ -31,6 +31,7 @@ const TRANSLATIONS = {
     hero_desc: "ताज़ा और गुणवत्तापूर्ण दूध एवं डेयरी उत्पाद, मालपुरा में भरोसेमंद सेवा के साथ।",
     hero_cta_primary: "📲 WhatsApp पर ऑर्डर करें",
     hero_cta_secondary: "🥛 Products देखें",
+    hero_feature_milk: "गाय और भैंस का दूध",
     hero_feature_cow: "गाय का दूध (Cow Milk)",
     hero_feature_buffalo: "भैंस का दूध (Buffalo Milk)",
     hero_feature_fresh: "ताज़ा डेयरी उत्पाद",
@@ -210,7 +211,23 @@ const TRANSLATIONS = {
     wa_msg_milk: "नमस्ते माँ करणी दूध डेयरी, मुझे {milk_type} ऑर्डर करना है। कृपया उपलब्धता और डिलीवरी की जानकारी दें।",
     wa_msg_general: "नमस्ते माँ करणी दूध डेयरी, मुझे आपके डेयरी उत्पादों के बारे में जानकारी चाहिए।",
     wa_msg_bulk: "नमस्ते माँ करणी दूध डेयरी, मैं Business/Bulk Order के बारे में जानकारी लेना चाहता/चाहती हूँ। कृपया उपलब्ध products, quantity और pricing की जानकारी दें।",
-    wa_msg_bulk_form: "नमस्ते माँ करणी दूध डेयरी, मैं Business / Bulk Order के लिए पूछताछ करना चाहता हूँ:\n\n👤 नाम/फर्म: {name}\n🏢 प्रकार: {type}\n📞 फ़ोन: {phone}\n🥛 आवश्यक उत्पाद: {product}\n⚖️ अनुमानित मात्रा: {qty}\n💬 विवरण: {notes}"
+    wa_msg_bulk_form: "नमस्ते माँ करणी दूध डेयरी, मैं Business / Bulk Order के लिए पूछताछ करना चाहता हूँ:\n\n👤 नाम/फर्म: {name}\n🏢 प्रकार: {type}\n📞 फ़ोन: {phone}\n🥛 आवश्यक उत्पाद: {product}\n⚖️ अनुमानित मात्रा: {qty}\n💬 विवरण: {notes}",
+
+    // Multi-page Breadcrumbs & Previews
+    breadcrumb_home: "होम",
+    breadcrumb_products: "डेयरी उत्पाद",
+    breadcrumb_farm: "हमारा फ़ार्म",
+    breadcrumb_bulk: "बल्क ऑर्डर्स",
+    breadcrumb_payment: "ऑनलाइन पेमेंट",
+    breadcrumb_contact: "संपर्क व लोकेशन",
+    home_products_preview_tag: "100% शुद्ध उत्पाद",
+    home_products_preview_title: "हमारे प्रमुख डेयरी उत्पाद",
+    home_products_preview_desc: "ताज़ा गाय व भैंस का दूध, मलाईदार दही, शुद्ध देसी घी, पनीर और छाछ।",
+    home_products_view_all: "सभी उत्पाद और पैकिंग वज़न देखें ➔",
+    home_farm_preview_tag: "स्वच्छ गौशाला",
+    home_farm_preview_title: "हमारा प्राकृतिक डेयरी फ़ार्म",
+    home_farm_preview_desc: "देखें हमारी आधुनिक गौशाला, मुर्रा नस्ल की भैंसें, और कड़े स्वच्छता मानक।",
+    home_farm_view_more: "फ़ार्म गैलरी व विशेषताएं देखें ➔"
   },
 
   en: {
@@ -239,6 +256,7 @@ const TRANSLATIONS = {
     hero_desc: "Fresh and quality dairy products, delivered with trusted service in Malpura.",
     hero_cta_primary: "📲 Order on WhatsApp",
     hero_cta_secondary: "🥛 View Products",
+    hero_feature_milk: "Fresh Cow & Buffalo Milk",
     hero_feature_cow: "Cow Milk",
     hero_feature_buffalo: "Buffalo Milk",
     hero_feature_fresh: "Fresh Dairy Products",
@@ -418,7 +436,23 @@ const TRANSLATIONS = {
     wa_msg_milk: "Hello Maa Karni Dairy, I want to order {milk_type}. Please let me know availability and delivery details.",
     wa_msg_general: "Hello Maa Karni Dairy, I would like to inquire about your dairy products.",
     wa_msg_bulk: "Hello Maa Karni Dairy, I am interested in placing a Business/Bulk Order. Please provide details on available products, quantity and pricing.",
-    wa_msg_bulk_form: "Hello Maa Karni Dairy, I would like to submit a Business / Bulk Order enquiry:\n\n👤 Name/Business: {name}\n🏢 Type: {type}\n📞 Phone: {phone}\n🥛 Product Required: {product}\n⚖️ Estimated Qty: {qty}\n💬 Notes: {notes}"
+    wa_msg_bulk_form: "Hello Maa Karni Dairy, I would like to submit a Business / Bulk Order enquiry:\n\n👤 Name/Business: {name}\n🏢 Type: {type}\n📞 Phone: {phone}\n🥛 Product Required: {product}\n⚖️ Estimated Qty: {qty}\n💬 Notes: {notes}",
+
+    // Multi-page Breadcrumbs & Previews
+    breadcrumb_home: "Home",
+    breadcrumb_products: "Dairy Products",
+    breadcrumb_farm: "Our Farm",
+    breadcrumb_bulk: "Bulk Orders",
+    breadcrumb_payment: "Online Payment",
+    breadcrumb_contact: "Contact & Location",
+    home_products_preview_tag: "100% Pure Products",
+    home_products_preview_title: "Our Featured Dairy Products",
+    home_products_preview_desc: "Fresh cow & buffalo milk, thick curd, pure desi ghee, fresh paneer, and buttermilk.",
+    home_products_view_all: "View All Products & Packaging Sizes ➔",
+    home_farm_preview_tag: "Clean Cattle Farm",
+    home_farm_preview_title: "Our Natural Dairy Farm",
+    home_farm_preview_desc: "Tour our modern cow sheds, Murrah buffalo breeds, and rigorous hygiene standards.",
+    home_farm_view_more: "Explore Farm Gallery & Standards ➔"
   }
 };
 
