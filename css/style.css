@@ -1373,7 +1373,7 @@ button {
 }
 
 .why-card {
-  background: #ffffff;
+  background: var(--color-surface, #ffffff);
   padding: 30px 24px;
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border-subtle);

@@ -77,7 +77,7 @@ const TRANSLATIONS = {
     farm_cta_order: "ताज़ा फ़ार्म दूध ऑर्डर करें",
 
     // Why Choose Us
-    why_heading: "Maa Karni Dhari को क्यों चुनें?",
+    why_heading: "माँ करणी दूध डेयरी को क्यों चुनें?",
     why_subheading: "मालपुरा का सबसे भरोसेमंद और ताज़ा डेयरी स्रोत।",
     why_1_title: "ताज़ा डेयरी उत्पाद",
     why_1_desc: "रोज़ाना सुबह ताज़ा निकाले गए दूध और बनाए गए उत्पाद आपके लिए।",
@@ -285,7 +285,7 @@ const TRANSLATIONS = {
     farm_cta_order: "Order Fresh Farm Milk",
 
     // Why Choose Us
-    why_heading: "Why Choose Maa Karni Dhari?",
+    why_heading: "Why Choose Maa Karni Dairy?",
     why_subheading: "Malpura's trusted destination for fresh and wholesome dairy.",
     why_1_title: "Fresh Dairy Products",
     why_1_desc: "Daily fresh dairy products harvested and crafted for everyday needs.",
