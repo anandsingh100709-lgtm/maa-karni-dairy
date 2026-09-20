@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -121,13 +121,20 @@
 
   <!-- Quick Page Access Navigation Strip -->
   <nav class="page-nav-strip" aria-label="वेबसाइट पेज चुनें">
-    <div class="page-nav-track">
-      <a href="index.html" class="page-nav-pill"><span class="nav-pill-icon">🏠</span> <span data-i18n="nav_home">होम</span></a>
-      <a href="products.html" class="page-nav-pill"><span class="nav-pill-icon">🥛</span> <span data-i18n="nav_products">डेयरी उत्पाद</span></a>
-      <a href="farm.html" class="page-nav-pill"><span class="nav-pill-icon">🌿</span> <span data-i18n="nav_farm">हमारा फ़ार्म</span></a>
-      <a href="bulk.html" class="page-nav-pill"><span class="nav-pill-icon">🏢</span> <span data-i18n="nav_bulk">बल्क ऑर्डर्स</span></a>
-      <a href="payment.html" class="page-nav-pill"><span class="nav-pill-icon">💳</span> <span data-i18n="nav_payment">पेमेंट</span></a>
-      <a href="contact.html" class="page-nav-pill active"><span class="nav-pill-icon">📞</span> <span data-i18n="nav_contact">संपर्क व लोकेशन</span></a>
+    <div class="page-nav-header-row">
+      <a href="payment.html?v=3" class="top-nav-btn-prev">◀ पिछला (5. पेमेंट)</a>
+      <span class="page-indicator-badge">📄 पेज 6 / 6 (संपर्क व पता)</span>
+      <a href="index.html?v=3" class="top-nav-btn-next">👉 मुख्य होम पेज (1. होम) ➔</a>
+    </div>
+    <div class="page-nav-scroll-wrap">
+      <div class="page-nav-track">
+        <a href="index.html?v=3" class="page-nav-pill"><span class="nav-pill-num">1</span> <span class="nav-pill-icon">🏠</span> <span data-i18n="nav_home">होम</span></a>
+        <a href="products.html?v=3" class="page-nav-pill"><span class="nav-pill-num">2</span> <span class="nav-pill-icon">🥛</span> <span data-i18n="nav_products">डेयरी उत्पाद</span></a>
+        <a href="farm.html?v=3" class="page-nav-pill"><span class="nav-pill-num">3</span> <span class="nav-pill-icon">🌿</span> <span data-i18n="nav_farm">हमारा फ़ार्म</span></a>
+        <a href="bulk.html?v=3" class="page-nav-pill"><span class="nav-pill-num">4</span> <span class="nav-pill-icon">🏢</span> <span data-i18n="nav_bulk">बल्क ऑर्डर्स</span></a>
+        <a href="payment.html?v=3" class="page-nav-pill"><span class="nav-pill-num">5</span> <span class="nav-pill-icon">💳</span> <span data-i18n="nav_payment">पेमेंट</span></a>
+        <a href="contact.html?v=3" class="page-nav-pill active"><span class="nav-pill-num">6</span> <span class="nav-pill-icon">📞</span> <span data-i18n="nav_contact">संपर्क व लोकेशन</span></a>
+      </div>
     </div>
   </nav>
 
@@ -137,12 +144,16 @@
     <section class="subpage-hero">
       <div class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="index.html" data-i18n="breadcrumb_home">होम</a>
+          <a href="index.html?v=3" data-i18n="breadcrumb_home">होम</a>
           <span class="breadcrumb-sep">/</span>
-          <span class="current" data-i18n="breadcrumb_contact">संपर्क व लोकेशन</span>
+          <span class="current" data-i18n="breadcrumb_contact">संपर्क व लोकेशन (पेज 6)</span>
         </nav>
         <h1 class="subpage-title" data-i18n="contact_heading">हमसे संपर्क करें</h1>
         <p class="subpage-desc" data-i18n="contact_subheading">किसी भी सवाल या ऑर्डर के लिए हमें कभी भी संपर्क करें।</p>
+        <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <a href="index.html?v=3" class="btn-hero-next" style="padding: 9px 18px; font-size: 0.95rem;">👉 मुख्य होम पेज पर वापस जाएँ (Page 1 ➔)</a>
+          <a href="payment.html?v=3" class="top-nav-btn-prev" style="padding: 9px 16px;">◀ पिछला पेज (5. पेमेंट)</a>
+        </div>
       </div>
     </section>
 
@@ -274,8 +285,8 @@
         <span class="next-page-badge">👉 अगला पेज (Next Page)</span>
         <h3 class="next-page-title">🏠 मुख्य पेज (Home Page)</h3>
         <p class="next-page-desc">माँ करणी दूध डेयरी के मुख्य पृष्ठ पर वापस जाएँ और हमारी सभी ताज़ा सेवाओं को देखें।</p>
-        <a href="index.html" class="btn-next-page-cta">
-          <span>होम पेज खोलें (Go to Home Page)</span> ➔
+        <a href="index.html?v=3" class="btn-next-page-cta">
+          <span>होम पेज खोलें (Go to Home Page ➔)</span>
         </a>
       </div>
     </section>
@@ -360,11 +371,17 @@
     </a>
   </nav>
 
+  <!-- Floating Persistent Next Page Button -->
+  <div class="floating-page-nav" id="floatingPageNav">
+    <span class="float-page-tag">पेज 6/6</span>
+    <a href="index.html?v=3">👉 होम पेज पर जाएँ ➔</a>
+  </div>
+
   <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
 
   <!-- Scripts -->
-  <script src="js/config.js"></script>
-  <script src="js/translations.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/config.js?v=3"></script>
+  <script src="js/translations.js?v=3"></script>
+  <script src="js/app.js?v=3"></script>
 </body>
 </html>

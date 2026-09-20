@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
 
   <!-- Schema.org Structured Data: LocalBusiness / DairyStore -->
   <script type="application/ld+json">
@@ -170,13 +170,19 @@
 
   <!-- Quick Page Access Navigation Strip -->
   <nav class="page-nav-strip" aria-label="वेबसाइट पेज चुनें">
-    <div class="page-nav-track">
-      <a href="index.html" class="page-nav-pill active"><span class="nav-pill-icon">🏠</span> <span data-i18n="nav_home">होम</span></a>
-      <a href="products.html" class="page-nav-pill"><span class="nav-pill-icon">🥛</span> <span data-i18n="nav_products">डेयरी उत्पाद</span></a>
-      <a href="farm.html" class="page-nav-pill"><span class="nav-pill-icon">🌿</span> <span data-i18n="nav_farm">हमारा फ़ार्म</span></a>
-      <a href="bulk.html" class="page-nav-pill"><span class="nav-pill-icon">🏢</span> <span data-i18n="nav_bulk">बल्क ऑर्डर्स</span></a>
-      <a href="payment.html" class="page-nav-pill"><span class="nav-pill-icon">💳</span> <span data-i18n="nav_payment">पेमेंट</span></a>
-      <a href="contact.html" class="page-nav-pill"><span class="nav-pill-icon">📞</span> <span data-i18n="nav_contact">संपर्क व लोकेशन</span></a>
+    <div class="page-nav-header-row">
+      <span class="page-indicator-badge">📄 पेज 1 / 6 (मुख्य होम)</span>
+      <a href="products.html?v=3" class="top-nav-btn-next">👉 अगला पेज (2. उत्पाद) ➔</a>
+    </div>
+    <div class="page-nav-scroll-wrap">
+      <div class="page-nav-track">
+        <a href="index.html?v=3" class="page-nav-pill active"><span class="nav-pill-num">1</span> <span class="nav-pill-icon">🏠</span> <span data-i18n="nav_home">होम</span></a>
+        <a href="products.html?v=3" class="page-nav-pill"><span class="nav-pill-num">2</span> <span class="nav-pill-icon">🥛</span> <span data-i18n="nav_products">डेयरी उत्पाद</span></a>
+        <a href="farm.html?v=3" class="page-nav-pill"><span class="nav-pill-num">3</span> <span class="nav-pill-icon">🌿</span> <span data-i18n="nav_farm">हमारा फ़ार्म</span></a>
+        <a href="bulk.html?v=3" class="page-nav-pill"><span class="nav-pill-num">4</span> <span class="nav-pill-icon">🏢</span> <span data-i18n="nav_bulk">बल्क ऑर्डर्स</span></a>
+        <a href="payment.html?v=3" class="page-nav-pill"><span class="nav-pill-num">5</span> <span class="nav-pill-icon">💳</span> <span data-i18n="nav_payment">पेमेंट</span></a>
+        <a href="contact.html?v=3" class="page-nav-pill"><span class="nav-pill-num">6</span> <span class="nav-pill-icon">📞</span> <span data-i18n="nav_contact">संपर्क व लोकेशन</span></a>
+      </div>
     </div>
   </nav>
 
@@ -198,14 +204,14 @@
 
           <!-- Primary Hero Actions -->
           <div class="hero-actions">
-            <a href="#" class="btn-primary btn-whatsapp whatsapp-general-link" data-i18n="hero_cta_primary">
+            <a href="products.html?v=3" class="btn-primary btn-hero-next" data-i18n="hero_cta_next_page">
+              👉 अगला पेज: डेयरी उत्पाद देखें (Page 2 ➔)
+            </a>
+            <a href="#" class="btn-secondary btn-whatsapp whatsapp-general-link" data-i18n="hero_cta_primary">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.782-.736-2.924-2.548-3.013-2.667-.088-.119-.724-.963-.724-1.836 0-.872.458-1.303.621-1.48.163-.178.356-.222.474-.222.119 0 .237.002.34.007.108.005.253-.041.396.302.147.356.505 1.233.549 1.322.045.089.074.193.015.312-.059.119-.089.193-.178.297-.089.104-.187.233-.267.312-.089.089-.182.186-.078.365.104.178.461.761 1.006 1.246.702.626 1.292.82 1.47.894.178.074.282.059.386-.059.104-.119.445-.519.564-.697.119-.178.237-.149.396-.089.159.059 1.009.475 1.182.562.173.087.288.131.331.205.044.074.044.43-.1 1.007z"/>
               </svg>
               <span>📲 WhatsApp पर ऑर्डर करें</span>
-            </a>
-            <a href="products.html" class="btn-secondary" data-i18n="hero_cta_secondary">
-              🥛 Products देखें (अलग पेज) ➔
             </a>
           </div>
 
@@ -706,12 +712,18 @@
     </a>
   </nav>
 
+  <!-- Floating Persistent Next Page Button -->
+  <div class="floating-page-nav" id="floatingPageNav">
+    <span class="float-page-tag">पेज 1/6</span>
+    <a href="products.html?v=3">👉 अगला पेज (उत्पाद) ➔</a>
+  </div>
+
   <!-- Live Toast Notification Element -->
   <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
 
   <!-- JavaScript Modules -->
-  <script src="js/config.js"></script>
-  <script src="js/translations.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/config.js?v=3"></script>
+  <script src="js/translations.js?v=3"></script>
+  <script src="js/app.js?v=3"></script>
 </body>
 </html>
