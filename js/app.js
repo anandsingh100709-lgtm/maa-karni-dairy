@@ -578,7 +578,14 @@
    * Theme Color Switcher Logic
    */
   function initThemeSwitcher() {
-    const savedTheme = localStorage.getItem('mkd_theme') || 'blue';
+    let savedTheme = localStorage.getItem('mkd_theme_v2');
+    if (!savedTheme) {
+      savedTheme = 'green';
+      try {
+        localStorage.setItem('mkd_theme_v2', 'green');
+        localStorage.setItem('mkd_theme', 'green');
+      } catch (e) {}
+    }
     setTheme(savedTheme);
 
     document.querySelectorAll('[data-theme-set]').forEach((btn) => {
@@ -594,6 +601,7 @@
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     try {
+      localStorage.setItem('mkd_theme_v2', theme);
       localStorage.setItem('mkd_theme', theme);
     } catch (e) {
       // Ignore if localStorage unavailable
@@ -614,7 +622,14 @@
    * Background Tone Switcher Logic ("पीछे का रंग")
    */
   function initBgSwitcher() {
-    const savedBg = localStorage.getItem('mkd_bg') || 'cream';
+    let savedBg = localStorage.getItem('mkd_bg_v2');
+    if (!savedBg) {
+      savedBg = 'cream';
+      try {
+        localStorage.setItem('mkd_bg_v2', 'cream');
+        localStorage.setItem('mkd_bg', 'cream');
+      } catch (e) {}
+    }
     setBg(savedBg);
 
     document.querySelectorAll('[data-bg-set]').forEach((btn) => {
@@ -630,6 +645,7 @@
   function setBg(bg) {
     document.documentElement.setAttribute('data-bg', bg);
     try {
+      localStorage.setItem('mkd_bg_v2', bg);
       localStorage.setItem('mkd_bg', bg);
     } catch (e) {
       // Ignore if localStorage unavailable

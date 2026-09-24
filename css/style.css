@@ -6,15 +6,15 @@
 
 /* --- Design Tokens & CSS Custom Properties --- */
 :root {
-  /* Default Brand Theme: Royal Dairy Blue (शाही डेयरी नीला - Matches Official Logo) */
-  --color-primary: #0284C7;
-  --color-primary-dark: #0369A1;
-  --color-primary-deep: #0C4A6E;
-  --color-primary-light: #38BDF8;
-  --color-primary-tint: #E0F2FE;
-  --color-primary-bg: #F0F9FF;
-  --primary-rgb: 2, 132, 199;
-  --shadow-rgb: 12, 74, 110;
+  /* Default Brand Theme: Fresh Farm Green & Warm Cream (ताज़ा फ़ार्म ग्रीन व मलाईदार क्रीम) */
+  --color-primary: #16A34A;
+  --color-primary-dark: #15803D;
+  --color-primary-deep: #14532D;
+  --color-primary-light: #22C55E;
+  --color-primary-tint: #DCFCE7;
+  --color-primary-bg: #F0FDF4;
+  --primary-rgb: 22, 163, 74;
+  --shadow-rgb: 20, 83, 45;
 
   /* Supporting Cream, Amber & Ghee Gold Tones */
   --color-cream: #FDFBF7;
@@ -24,14 +24,14 @@
   --color-gold: #F59E0B;
 
   /* Background & Surface Palette (Default: Warm Fresh Milk Cream / Desi Malai) */
-  --color-bg: #FAF5E8;
-  --color-bg-alt: #F3ECE0;
+  --color-bg: #FCF9F2;
+  --color-bg-alt: #F6EFE0;
   --color-surface: #FFFFFF;
-  --color-text-main: #0F172A;
-  --color-text-body: #1E293B;
-  --color-text-muted: #64748B;
-  --color-border: #E8DEC8;
-  --color-border-subtle: #F0E6D2;
+  --color-text-main: #0F2E1B;
+  --color-text-body: #1E3A2B;
+  --color-text-muted: #4B6354;
+  --color-border: #E8DFCB;
+  --color-border-subtle: #F2ECDC;
 
   /* WhatsApp Green */
   --color-whatsapp: #25D366;
@@ -135,11 +135,11 @@
 
 /* Background 1 (Default): Warm Dairy Milk Cream (मलाईदार क्रीम) */
 [data-bg="cream"], html[data-bg="cream"] {
-  --color-bg: #FAF5E8;
-  --color-bg-alt: #F3ECE0;
+  --color-bg: #FCF9F2;
+  --color-bg-alt: #F6EFE0;
   --color-surface: #FFFFFF;
-  --color-border: #E8DEC8;
-  --color-border-subtle: #F0E6D2;
+  --color-border: #E8DFCB;
+  --color-border-subtle: #F2ECDC;
 }
 
 /* Background 2: Cool Milk Blue (ताज़ा दूधिया नीला) */
