@@ -41,20 +41,6 @@ const CONFIG = {
         { id: "250gm", label_hi: "250 gm", label_en: "250 gm", price: 18 }
       ]
     },
-    curd: {
-      id: "curd",
-      name_hi: "दही",
-      name_en: "Fresh Curd (Dahi)",
-      sub_hi: "गाढ़ा और स्वादिष्ट ताज़ा दही",
-      sub_en: "Thick, creamy & fresh curd",
-      price: 50,
-      hasMilkTypes: false,
-      variants: [
-        { id: "1kg", label_hi: "1 kg", label_en: "1 kg", price: 50, default: true },
-        { id: "500gm", label_hi: "500 gm", label_en: "500 gm", price: 25 },
-        { id: "250gm", label_hi: "250 gm", label_en: "250 gm", price: 15 }
-      ]
-    },
     ghee: {
       id: "ghee",
       name_hi: "शुद्ध घी",
@@ -67,34 +53,6 @@ const CONFIG = {
         { id: "1kg", label_hi: "1 kg", label_en: "1 kg", price: 1200, default: true },
         { id: "500gm", label_hi: "500 gm", label_en: "500 gm", price: 600 },
         { id: "250gm", label_hi: "250 gm", label_en: "250 gm", price: 300 }
-      ]
-    },
-    paneer: {
-      id: "paneer",
-      name_hi: "पनीर",
-      name_en: "Fresh Paneer",
-      sub_hi: "मुलायम, शुद्ध और ताज़ा पनीर",
-      sub_en: "Soft, rich & hygienic fresh paneer",
-      price: 400,
-      hasMilkTypes: false,
-      variants: [
-        { id: "1kg", label_hi: "1 kg", label_en: "1 kg", price: 400, default: true },
-        { id: "500gm", label_hi: "500 gm", label_en: "500 gm", price: 200 },
-        { id: "250gm", label_hi: "250 gm", label_en: "250 gm", price: 100 },
-        { id: "100gm", label_hi: "100 gm", label_en: "100 gm", price: 40 }
-      ]
-    },
-    buttermilk: {
-      id: "buttermilk",
-      name_hi: "छाछ (बटरमिल्क)",
-      name_en: "Fresh Buttermilk (Chhachh)",
-      sub_hi: "ठंडी, ताज़ा और पाचक छाछ",
-      sub_en: "Refreshing, light & digestive buttermilk",
-      price: 30,
-      hasMilkTypes: false,
-      variants: [
-        { id: "1kg", label_hi: "1 kg", label_en: "1 kg", price: 30, default: true },
-        { id: "500gm", label_hi: "500 gm", label_en: "500 gm", price: 15 }
       ]
     }
   },

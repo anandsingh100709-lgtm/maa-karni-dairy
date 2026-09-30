@@ -12,17 +12,11 @@
     milkType: 'cow',   // Default milk selection
     selectedVariants: {
       milk: '1kg',
-      curd: '1kg',
-      ghee: '1kg',
-      paneer: '1kg',
-      buttermilk: '1kg'
+      ghee: '1kg'
     },
     quantities: {
       milk: 1,
-      curd: 1,
-      ghee: 1,
-      paneer: 1,
-      buttermilk: 1
+      ghee: 1
     }
   };
 
