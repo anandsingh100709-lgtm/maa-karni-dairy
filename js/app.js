@@ -221,6 +221,23 @@
   }
 
   /**
+   * Safe helper to track Meta Pixel events
+   */
+  function trackMetaPixel(eventName, params) {
+    if (typeof window.fbq === 'function') {
+      try {
+        if (params) {
+          window.fbq('track', eventName, params);
+        } else {
+          window.fbq('track', eventName);
+        }
+      } catch (err) {
+        // fail silently
+      }
+    }
+  }
+
+  /**
    * Generate WhatsApp URL with international formatting
    */
   function createWhatsAppUrl(messageText) {
@@ -268,6 +285,13 @@
     const formattedItem = `${productName} (मात्रा / Qty: ${qty})`;
     const message = template.replace('{product}', formattedItem);
 
+    // Track Meta Pixel InitiateCheckout / Order
+    trackMetaPixel('InitiateCheckout', {
+      content_name: productName,
+      content_category: 'Dairy Products',
+      num_items: qty
+    });
+
     // Open WhatsApp URL
     window.open(createWhatsAppUrl(message), '_blank', 'noopener,noreferrer');
   }
@@ -308,11 +332,15 @@
     // 4. Contact phone numbers sync
     document.querySelectorAll('.phone-call-link').forEach((link) => {
       link.setAttribute('href', `tel:${CONFIG.PHONE_DIAL_PREFIX}${CONFIG.PHONE_NUMBER}`);
+      link.addEventListener('click', () => {
+        trackMetaPixel('Contact', { content_name: 'Phone Call Direct' });
+      });
     });
 
     document.querySelectorAll('.whatsapp-general-link').forEach((link) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
+        trackMetaPixel('Contact', { content_name: 'WhatsApp General Direct' });
         const dict = TRANSLATIONS[state.currentLang] || TRANSLATIONS.hi;
         window.open(createWhatsAppUrl(dict.wa_msg_general), '_blank', 'noopener,noreferrer');
       });
@@ -321,6 +349,7 @@
     document.querySelectorAll('.whatsapp-bulk-link').forEach((link) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
+        trackMetaPixel('Lead', { content_name: 'WhatsApp Bulk Supply' });
         const dict = TRANSLATIONS[state.currentLang] || TRANSLATIONS.hi;
         window.open(createWhatsAppUrl(dict.wa_msg_bulk), '_blank', 'noopener,noreferrer');
       });
@@ -340,6 +369,7 @@
    */
   function copyUpiId() {
     const upiText = CONFIG.UPI_ID;
+    trackMetaPixel('AddPaymentInfo', { content_name: 'UPI ID Copy' });
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(upiText).then(() => {
         showToast(state.currentLang === 'hi' ? 'UPI ID कॉपी हो गया!' : 'UPI ID copied to clipboard!');
@@ -430,6 +460,13 @@
     template = template.replace('{product}', prodInput.value.trim());
     template = template.replace('{qty}', qtyInput.value.trim());
     template = template.replace('{notes}', notesText);
+
+    // Track Meta Pixel Lead event
+    trackMetaPixel('Lead', {
+      content_name: 'Bulk Order Form',
+      business_name: nameInput.value.trim(),
+      product: prodInput.value.trim()
+    });
 
     // Open WhatsApp
     window.open(createWhatsAppUrl(template), '_blank', 'noopener,noreferrer');

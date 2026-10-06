@@ -21,6 +21,9 @@ const CONFIG = {
   PHONE_NUMBER: "8209931769",
   PHONE_DIAL_PREFIX: "+91",
 
+  // Analytics & Meta Pixel
+  META_PIXEL_ID: "2574935932945217",
+
   // Product Prices (Neutral display format without invented units)
   PRODUCTS: {
     milk: {
