@@ -221,7 +221,7 @@
   }
 
   /**
-   * Safe helper to track Meta Pixel events
+   * Safe helper to track Meta Pixel and GTM dataLayer events
    */
   function trackMetaPixel(eventName, params) {
     if (typeof window.fbq === 'function') {
@@ -231,6 +231,14 @@
         } else {
           window.fbq('track', eventName);
         }
+      } catch (err) {
+        // fail silently
+      }
+    }
+    // Safely forward event to GTM dataLayer if initialized
+    if (window.dataLayer && Array.isArray(window.dataLayer)) {
+      try {
+        window.dataLayer.push(Object.assign({ event: eventName }, params || {}));
       } catch (err) {
         // fail silently
       }
