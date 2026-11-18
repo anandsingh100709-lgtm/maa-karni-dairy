@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- 1. मुख्य होम पेज (Home Page) -->
+  <url>
+    <loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/assets/images/hero-dairy.jpg</image:loc>
+      <image:title>माँ करणी दूध डेयरी मालपुरा - ताज़ा दूध व शुद्ध देसी घी</image:title>
+    </image:image>
+  </url>
+
+  <!-- 2. डेयरी उत्पाद पेज (Products Page) -->
+  <url>
+    <loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/products.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/assets/images/milk.jpg</image:loc>
+      <image:title>ताज़ा गाय व भैंस का दूध - ₹70/L मालपुरा</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/assets/images/ghee.jpg</image:loc>
+      <image:title>शुद्ध देसी घी - ₹1200/kg मालपुरा</image:title>
+    </image:image>
+  </url>
+
+  <!-- 3. हमारा डेयरी फ़ार्म (Farm Page) -->
+  <url>
+    <loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/farm.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/assets/images/farm-cows.jpg</image:loc>
+      <image:title>माँ करणी डेयरी फ़ार्म - स्वस्थ देशी गायें व मुर्रा भैंसें</image:title>
+    </image:image>
+  </url>
+
+  <!-- 4. थोक ऑर्डर्स (Bulk Orders Page) -->
+  <url>
+    <loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/bulk.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 5. ऑनलाइन पेमेंट (Payment & QR Page) -->
+  <url>
+    <loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/payment.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 6. संपर्क व दुकान लोकेशन (Contact & Location Page) -->
+  <url>
+    <loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/contact.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 7. SEO पैनल (SEO Panel) -->
+  <url>
+    <loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/seo-panel.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="green" data-bg="cream">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-58JJ9RJL');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO कंट्रोल पैनल एवं ऑडिट डैशबोर्ड - माँ करणी दूध डेयरी मालपुरा</title>
+  
+  <meta name="description" content="माँ करणी दूध डेयरी का संपूर्ण SEO कंट्रोल पैनल - लाइव गूगल सर्च प्रीव्यू, सोशल मीडिया शेयर कार्ड, लोकल कीवर्ड्स, स्कीमा जनरेटर और साइटमैप मैनेजर।">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://anandsingh100709-lgtm.github.io/maa-karni-dairy/seo-panel.html">
+  <meta name="theme-color" content="#15803D">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=8">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2574935932945217');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2574935932945217&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    /* SEO Panel Specialized Styles */
+    .seo-panel-body {
+      background: #f8fafc;
+      min-height: 100vh;
+      color: #0f172a;
+      font-family: var(--font-body);
+    }
+    .seo-header-bar {
+      background: linear-gradient(135deg, #14532d 0%, #15803d 100%);
+      color: #ffffff;
+      padding: 24px 0 20px;
+      box-shadow: 0 4px 15px rgba(20, 83, 45, 0.2);
+    }
+    .seo-header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .seo-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .seo-brand-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: #fff;
+      padding: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .seo-title {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .seo-subtitle {
+      font-size: 0.9rem;
+      color: #dcfce7;
+      margin-top: 2px;
+    }
+    .seo-header-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .seo-btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      color: #15803d;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 9px 18px;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      transition: all 0.2s ease;
+    }
+    .seo-btn-back:hover {
+      background: #f0fdf4;
+      transform: translateY(-1px);
+    }
+
+    /* Score and Status Metrics */
+    .seo-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+    .seo-metric-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .seo-metric-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+    }
+    .seo-metric-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+    .seo-metric-val {
+      font-family: var(--font-heading);
+      font-size: 1.65rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: #0f172a;
+    }
+    .seo-metric-label {
+      font-size: 0.82rem;
+      color: #64748b;
+      margin-top: 3px;
+      font-weight: 500;
+    }
+    .seo-metric-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+
+    /* Tabs Navigation */
+    .seo-nav-tabs {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid #e2e8f0;
+      -webkit-overflow-scrolling: touch;
+    }
+    .seo-tab-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px 10px 0 0;
+      padding: 12px 18px;
+      font-family: var(--font-heading);
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #475569;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .seo-tab-btn:hover {
+      color: #15803d;
+      background: #f0fdf4;
+      border-color: #86efac;
+    }
+    .seo-tab-btn.active {
+      background: #15803d;
+      color: #ffffff;
+      border-color: #15803d;
+      box-shadow: 0 4px 10px rgba(21, 128, 61, 0.25);
+    }
+
+    /* Tab Content Cards */
+    .seo-tab-pane {
+      display: none;
+      animation: fadeInTab 0.25s ease-in-out;
+    }
+    .seo-tab-pane.active {
+      display: block;
+    }
+    @keyframes fadeInTab {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .seo-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    .seo-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .seo-card-desc {
+      font-size: 0.92rem;
+      color: #64748b;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    /* Google SERP Simulator Box */
+    .google-serp-container {
+      background: #ffffff;
+      border: 1px solid #dadce0;
+      border-radius: 12px;
+      padding: 20px 24px;
+      max-width: 680px;
+      font-family: Roboto, Arial, sans-serif;
+      box-shadow: 0 2px 8px rgba(60,64,67,0.08);
+      margin-bottom: 24px;
+      transition: max-width 0.3s ease;
+    }
+    .google-serp-container.mobile-view {
+      max-width: 380px;
+      padding: 16px;
+      border-radius: 18px;
+      border: 2px solid #e2e8f0;
+    }
+    .serp-url-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .serp-favicon {
+      width: 26px;
+      height: 26px;
+      background: #f1f3f4;
+      border-radius: 50%;
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .serp-favicon img {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .serp-breadcrumb {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+    .serp-brand {
+      font-size: 14px;
+      color: #202124;
+      font-weight: 500;
+    }
+    .serp-link {
+      font-size: 12px;
+      color: #4d5156;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .serp-title {
+      color: #1a0dab;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.3;
+      margin: 4px 0 3px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .serp-title:hover {
+      text-decoration: underline;
+    }
+    .serp-rating {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #70757a;
+      margin-bottom: 4px;
+    }
+    .serp-stars {
+      color: #e37400;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .serp-desc {
+      font-size: 14px;
+      line-height: 1.58;
+      color: #4d5156;
+      word-wrap: break-word;
+      margin-bottom: 12px;
+    }
+    .serp-sitelinks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 20px;
+      padding-top: 10px;
+      border-top: 1px solid #f1f3f4;
+    }
+    .serp-sitelink-item a {
+      color: #1a0dab;
+      font-size: 13px;
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+    }
+    .serp-sitelink-item a:hover {
+      text-decoration: underline;
+    }
+    .serp-sitelink-desc {
+      font-size: 11px;
+      color: #70757a;
+      line-height: 1.3;
+    }
+
+    /* Inputs and Controls */
+    .seo-field-group {
+      margin-bottom: 18px;
+    }
+    .seo-field-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+    .char-counter {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: #64748b;
+    }
+    .char-counter.valid {
+      background: #dcfce7;
+      color: #15803d;
+    }
+    .char-counter.warn {
+      background: #fef3c7;
+      color: #b45309;
+    }
+    .char-counter.danger {
+      background: #fee2e2;
+      color: #b91c1c;
+    }
+    .seo-input, .seo-select, .seo-textarea {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: #0f172a;
+      background: #ffffff;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .seo-input:focus, .seo-select:focus, .seo-textarea:focus {
+      border-color: #15803d;
+      box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.15);
+    }
+    .seo-textarea {
+      resize: vertical;
+      min-height: 72px;
+    }
+
+    /* WhatsApp Social Share Preview */
+    .wa-preview-card {
+      max-width: 440px;
+      background: #dcf8c6;
+      border-radius: 14px 14px 14px 2px;
+      padding: 8px 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin-bottom: 24px;
+    }
+    .wa-link-preview {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #e1e9eb;
+    }
+    .wa-preview-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+    .wa-preview-text {
+      padding: 10px 12px;
+    }
+    .wa-domain {
+      font-size: 11px;
+      color: #777777;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .wa-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #111111;
+      line-height: 1.35;
+      margin: 4px 0;
+    }
+    .wa-desc {
+      font-size: 12px;
+      color: #555555;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Keyword Table */
+    .keyword-table-wrap {
+      overflow-x: auto;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+    }
+    .keyword-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+    .keyword-table th {
+      background: #f8fafc;
+      color: #475569;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      padding: 12px 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .keyword-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #1e293b;
+    }
+    .keyword-table tr:hover td {
+      background: #f8fafc;
+    }
+
+    /* Code Snippet Box */
+    .code-box-container {
+      position: relative;
+      background: #0f172a;
+      border-radius: 12px;
+      padding: 16px 20px;
+      color: #e2e8f0;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      overflow-x: auto;
+      margin-bottom: 16px;
+    }
+    .code-box-copy-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #1e293b;
+      color: #94a3b8;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .code-box-copy-btn:hover {
+      background: #15803d;
+      color: #ffffff;
+      border-color: #15803d;
+    }
+
+    /* Action Buttons */
+    .btn-seo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #15803d;
+      color: #ffffff;
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .btn-seo:hover {
+      background: #16a34a;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+    }
+    .btn-seo-outline {
+      background: #ffffff;
+      color: #15803d;
+      border: 1.5px solid #15803d;
+    }
+    .btn-seo-outline:hover {
+      background: #f0fdf4;
+      color: #14532d;
+    }
+
+    /* Toast */
+    .seo-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.92rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 9999;
+    }
+    .seo-toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="seo-panel-body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58JJ9RJL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Top Navigation Header -->
+  <header class="seo-header-bar">
+    <div class="container">
+      <div class="seo-header-content">
+        <div class="seo-brand-box">
+          <img src="assets/images/logo.png" alt="Maa Karni Dairy" class="seo-brand-img">
+          <div>
+            <h1 class="seo-title">🔍 SEO कंट्रोल पैनल एवं ऑडिट डैशबोर्ड</h1>
+            <div class="seo-subtitle">माँ करणी दूध डेयरी (Malpura, Rajasthan) — सर्च इंजन ऑप्टिमाइज़ेशन हब</div>
+          </div>
+        </div>
+
+        <div class="seo-header-actions">
+          <a href="index.html?v=8" class="seo-btn-back">
+            <span>🏠 मुख्य होम पेज</span>
+          </a>
+          <a href="products.html?v=8" class="seo-btn-back">
+            <span>🥛 उत्पाद पेज</span>
+          </a>
+          <a href="sitemap.xml" target="_blank" class="seo-btn-back" style="background:#dcfce7; color:#14532d;">
+            <span>🗺️ Sitemap.xml</span>
+          </a>
+          <a href="robots.txt" target="_blank" class="seo-btn-back" style="background:#fef3c7; color:#b45309;">
+            <span>🤖 Robots.txt</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 24px; padding-bottom: 60px;">
+
+    <!-- Summary Metrics Grid -->
+    <section class="seo-metrics-grid">
+      <!-- 1. Health Score -->
+      <div class="seo-metric-card">
+        <div class="seo-metric-icon" style="background: #dcfce7; color: #15803d;">⚡</div>
+        <div>
+          <div class="seo-metric-val" style="color: #15803d;">98 / 100</div>
+          <div class="seo-metric-label">कुल SEO स्वास्थ्य स्कोर (Health Score)</div>
+          <span class="seo-metric-tag" style="background: #dcfce7; color: #166534;">✓ A+ ग्रेड (उत्कृष्ट)</span>
+        </div>
+      </div>
+
+      <!-- 2. Indexable Pages -->
+      <div class="seo-metric-card">
+        <div class="seo-metric-icon" style="background: #e0f2fe; color: #0284c7;">📄</div>
+        <div>
+          <div class="seo-metric-val">6 / 6</div>
+          <div class="seo-metric-label">इंडेक्सेबल मुख्य पेज (Google Indexable)</div>
+          <span class="seo-metric-tag" style="background: #e0f2fe; color: #0369a1;">Sitemap में सक्रिय</span>
+        </div>
+      </div>
+
+      <!-- 3. Local Target -->
+      <div class="seo-metric-card">
+        <div class="seo-metric-icon" style="background: #fef3c7; color: #d97706;">📍</div>
+        <div>
+          <div class="seo-metric-val" style="font-size: 1.3rem;">मालपुरा, टोंक</div>
+          <div class="seo-metric-label">लोकल रैंकिंग टारगेट (Local Business Area)</div>
+          <span class="seo-metric-tag" style="background: #fef3c7; color: #92400e;">राजस्थान पिनकोड 304502</span>
+        </div>
+      </div>
+
+      <!-- 4. Active Tracking -->
+      <div class="seo-metric-card">
+        <div class="seo-metric-icon" style="background: #f3e8ff; color: #9333ea;">📊</div>
+        <div>
+          <div class="seo-metric-val" style="font-size: 1.25rem;">GTM + Meta</div>
+          <div class="seo-metric-label">सक्रिय ट्रैकिंग टैग्स (Tracking & Pixels)</div>
+          <span class="seo-metric-tag" style="background: #f3e8ff; color: #6b21a8;">GTM-58JJ9RJL सक्रिय</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Dashboard Tabs -->
+    <nav class="seo-nav-tabs" role="tablist">
+      <button type="button" class="seo-tab-btn active" data-tab="tab-serp">
+        <span>🔎 1. गूगल सर्च सिम्युलेटर व मेटा एडिटर</span>
+      </button>
+      <button type="button" class="seo-tab-btn" data-tab="tab-social">
+        <span>📱 2. सोशल व WhatsApp शेयर प्रीव्यू</span>
+      </button>
+      <button type="button" class="seo-tab-btn" data-tab="tab-keywords">
+        <span>🎯 3. मालपुरा लोकल कीवर्ड्स टारगेट</span>
+      </button>
+      <button type="button" class="seo-tab-btn" data-tab="tab-schema">
+        <span>🏗️ 4. Schema.org रिच स्निपेट्स जनरेटर</span>
+      </button>
+      <button type="button" class="seo-tab-btn" data-tab="tab-sitemap">
+        <span>🗺️ 5. Robots.txt एवं Sitemap.xml</span>
+      </button>
+      <button type="button" class="seo-tab-btn" data-tab="tab-checklist">
+        <span>🚀 6. गूगल 1st पेज रैंकिंग गाइड</span>
+      </button>
+    </nav>
+
+    <!-- ====================================================================
+         TAB 1: Google SERP Simulator & Realtime Meta Tag Editor
+         ==================================================================== -->
+    <div class="seo-tab-pane active" id="tab-serp">
+      <div class="seo-card">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
+          <div>
+            <h2 class="seo-card-title">🔎 लाइव गूगल सर्च रिजल्ट सिम्युलेटर (Google SERP Simulator)</h2>
+            <p class="seo-card-desc">देखें कि जब कोई ग्राहक गूगल पर ताज़ा दूध या देसी घी खोजेगा, तो आपकी डेयरी का लिंक गूगल सर्च में कैसा दिखेगा।</p>
+          </div>
+          <!-- Device Toggle -->
+          <div style="display:flex; gap:8px; align-items:center;">
+            <label style="font-size:0.85rem; font-weight:600; color:#475569;">व्यू मोड:</label>
+            <button type="button" id="btnSerpDesktop" class="btn-seo" style="padding:6px 14px; font-size:0.85rem;">💻 डेस्कटॉप</button>
+            <button type="button" id="btnSerpMobile" class="btn-seo btn-seo-outline" style="padding:6px 14px; font-size:0.85rem;">📱 मोबाइल</button>
+          </div>
+        </div>
+
+        <!-- Google SERP Card -->
+        <div class="google-serp-container" id="googleSerpBox">
+          <div class="serp-url-row">
+            <div class="serp-favicon">
+              <img src="assets/images/logo.png" alt="Favicon">
+            </div>
+            <div class="serp-breadcrumb">
+              <span class="serp-brand">माँ करणी दूध डेयरी (Maa Karni Dairy)</span>
+              <span class="serp-link" id="serpDisplayUrl">https://anandsingh100709-lgtm.github.io/maa-karni-dairy</span>
+            </div>
+          </div>
+          <a href="#" class="serp-title" id="serpDisplayTitle">माँ करणी दूध डेयरी - ताज़ा दूध व शुद्ध देसी घी | Malpura, Rajasthan</a>
+          <div class="serp-rating">
+            <span class="serp-stars">★★★★★</span>
+            <span><strong>4.9</strong> (84 समीक्षाएं / Google Reviews) · डेयरी फार्म · मालपुरा</span>
+          </div>
+          <div class="serp-desc" id="serpDisplayDesc">माँ करणी दूध डेयरी मालपुरा - ताज़ा गाय व भैंस का दूध (₹70/L) और शुद्ध देसी घी (₹1200/kg)। मालपुरा शहर में होम डिलीवरी एवं होटल-हलवाई हेतु थोक सप्लाई। फ़ोन 8209931769।</div>
+          <div class="serp-sitelinks">
+            <div class="serp-sitelink-item">
+              <a href="products.html?v=8">🥛 डेयरी उत्पाद (दूध व घी)</a>
+              <div class="serp-sitelink-desc">ताज़ा गाय व भैंस दूध ₹70/L एवं शुद्ध देसी घी रेट</div>
+            </div>
+            <div class="serp-sitelink-item">
+              <a href="farm.html?v=8">🌿 हमारा डेयरी फ़ार्म</a>
+              <div class="serp-sitelink-desc">स्वस्थ देशी गायें, मुर्रा नस्ल भैंसें व हरा चारा</div>
+            </div>
+            <div class="serp-sitelink-item">
+              <a href="bulk.html?v=8">🏢 होटल व हलवाई थोक</a>
+              <div class="serp-sitelink-desc">शादी-विवाह व हलवाई हेतु नियमित थोक सप्लाई</div>
+            </div>
+            <div class="serp-sitelink-item">
+              <a href="contact.html?v=8">📞 संपर्क व दुकान लोकेशन</a>
+              <div class="serp-sitelink-desc">मालपुरा टोंक दुकान पता व समय सुबह 6-9, शाम 6-8</div>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border:0; border-top:1px solid #e2e8f0; margin:24px 0;">
+
+        <!-- Realtime Page Selector & Meta Tag Editor -->
+        <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:14px; color:#1e293b;">
+          ✏️ पेज चुनें और लाइव मेटा टैग एडिट करें
+        </h3>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
+          <!-- Left Column -->
+          <div>
+            <div class="seo-field-group">
+              <label class="seo-field-label" for="pageSelector">पेज चुनें (Select Page):</label>
+              <select id="pageSelector" class="seo-select">
+                <option value="home">1. मुख्य होम पेज (index.html)</option>
+                <option value="products">2. डेयरी उत्पाद पेज (products.html)</option>
+                <option value="farm">3. हमारा फ़ार्म पेज (farm.html)</option>
+                <option value="bulk">4. थोक ऑर्डर्स पेज (bulk.html)</option>
+                <option value="payment">5. ऑनलाइन पेमेंट पेज (payment.html)</option>
+                <option value="contact">6. संपर्क व लोकेशन पेज (contact.html)</option>
+              </select>
+            </div>
+
+            <div class="seo-field-group">
+              <label class="seo-field-label" for="inputTitle">
+                <span>एसईओ टाइटल (SEO Title Tag):</span>
+                <span id="counterTitle" class="char-counter valid">58 / 60 अक्षर</span>
+              </label>
+              <input type="text" id="inputTitle" class="seo-input" value="माँ करणी दूध डेयरी - ताज़ा दूध व शुद्ध देसी घी | Malpura">
+              <span style="font-size:0.75rem; color:#64748b; margin-top:4px; display:block;">गूगल के लिए आदर्श लंबाई: 50 से 60 अक्षर</span>
+            </div>
+
+            <div class="seo-field-group">
+              <label class="seo-field-label" for="inputDesc">
+                <span>मेटा विवरण (Meta Description):</span>
+                <span id="counterDesc" class="char-counter valid">154 / 160 अक्षर</span>
+              </label>
+              <textarea id="inputDesc" class="seo-textarea" rows="3">माँ करणी दूध डेयरी मालपुरा - ताज़ा गाय व भैंस का दूध (₹70/L) और शुद्ध देसी घी (₹1200/kg)। मालपुरा शहर में होम डिलीवरी एवं होटल-हलवाई हेतु थोक सप्लाई। फ़ोन 8209931769।</textarea>
+              <span style="font-size:0.75rem; color:#64748b; margin-top:4px; display:block;">गूगल के लिए आदर्श लंबाई: 140 से 160 अक्षर</span>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div>
+            <div class="seo-field-group">
+              <label class="seo-field-label" for="inputKeywords">प्रमुख कीवर्ड्स (Target Keywords):</label>
+              <input type="text" id="inputKeywords" class="seo-input" value="Dairy in Malpura, Fresh milk Malpura, Pure desi ghee Malpura, Milk delivery Malpura, Tonk dairy">
+            </div>
+
+            <div class="seo-field-group">
+              <label class="seo-field-label" for="inputCanonical">कैनोनिकल यूआरएल (Canonical URL):</label>
+              <input type="text" id="inputCanonical" class="seo-input" value="https://anandsingh100709-lgtm.github.io/maa-karni-dairy/">
+            </div>
+
+            <div class="seo-field-group">
+              <label class="seo-field-label">तैयार HTML मेटा टैग्स (Generated HTML Meta):</label>
+              <div class="code-box-container" style="max-height:140px; font-size:0.8rem; margin-bottom:8px;">
+                <button type="button" class="code-box-copy-btn" id="btnCopyMetaTags">📋 कॉपी करें</button>
+                <code id="metaTagsCode"></code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         TAB 2: WhatsApp & Social Share Preview
+         ==================================================================== -->
+    <div class="seo-tab-pane" id="tab-social">
+      <div class="seo-card">
+        <h2 class="seo-card-title">📱 सोशल मीडिया व WhatsApp शेयर प्रीव्यू (Open Graph Previews)</h2>
+        <p class="seo-card-desc">जब आप या आपके ग्राहक वेबसाइट का लिंक WhatsApp, Facebook, या Instagram पर शेयर करते हैं, तो वह ऐसा सुंदर कार्ड बनकर दिखता है।</p>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:24px;">
+          <!-- WhatsApp Card Preview -->
+          <div>
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:700; color:#128c7e; margin-bottom:10px;">
+              🟢 WhatsApp शेयर कार्ड प्रीव्यू
+            </h4>
+            <div class="wa-preview-card">
+              <div class="wa-link-preview">
+                <img src="assets/images/hero-dairy.jpg" alt="Maa Karni Dairy" class="wa-preview-img">
+                <div class="wa-preview-text">
+                  <div class="wa-domain">anandsingh100709-lgtm.github.io</div>
+                  <div class="wa-title" id="waTitle">माँ करणी दूध डेयरी - शुद्धता और स्वाद का भरोसा | Malpura</div>
+                  <div class="wa-desc" id="waDesc">ताज़ा और गुणवत्तापूर्ण गाय व भैंस का दूध और शुद्ध देसी घी। मालपुरा में होम डिलीवरी एवं होटल-मिठाई दुकानों के लिए बल्क सप्लाई।</div>
+                </div>
+              </div>
+            </div>
+            <p style="font-size:0.85rem; color:#64748b;">WhatsApp स्वतः <code>og:image</code>, <code>og:title</code>, एवं <code>og:description</code> को फेच करता है।</p>
+          </div>
+
+          <!-- Open Graph Tags Code Box -->
+          <div>
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:700; color:#1e293b; margin-bottom:10px;">
+              📋 सोशल मीडिया (Open Graph) कोड
+            </h4>
+            <div class="code-box-container" style="min-height:220px;">
+              <button type="button" class="code-box-copy-btn" id="btnCopyOgCode">📋 OG कोड कॉपी करें</button>
+              <code id="ogCodeBlock"></code>
+            </div>
+            <div style="display:flex; gap:10px; margin-top:12px;">
+              <button type="button" class="btn-seo" id="btnShareTestWa">
+                <span>💬 WhatsApp पर टेस्ट शेयर करें</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         TAB 3: Local SEO Keywords & Ranking Targets
+         ==================================================================== -->
+    <div class="seo-tab-pane" id="tab-keywords">
+      <div class="seo-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
+          <div>
+            <h2 class="seo-card-title">🎯 मालपुरा व टोंक के हाई-रैंकिंग डेयरी कीवर्ड्स</h2>
+            <p class="seo-card-desc">इन सर्च शब्दों (Keywords) पर आपकी वेबसाइट को गूगल में #1 रैंक पर लाने के लिए तैयार किया गया है।</p>
+          </div>
+          <button type="button" class="btn-seo" id="btnCopyAllKeywords">
+            <span>📋 सभी 10 कीवर्ड्स कॉपी करें</span>
+          </button>
+        </div>
+
+        <div class="keyword-table-wrap">
+          <table class="keyword-table">
+            <thead>
+              <tr>
+                <th>क्र.सं.</th>
+                <th>टारगेट कीवर्ड (Target Keyword)</th>
+                <th>सर्च इंटेंट (Search Intent)</th>
+                <th>टारगेट पेज</th>
+                <th>लोकल प्राथमिकता</th>
+                <th>एक्शन</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><strong>Maa Karni Dairy Malpura</strong></td>
+                <td><span class="seo-metric-tag" style="background:#dbeafe; color:#1d4ed8;">ब्रांड सर्च</span></td>
+                <td>मुख्य होम (index.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">अति-उच्च (High)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="Maa Karni Dairy Malpura" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>Fresh milk delivery in Malpura</strong></td>
+                <td><span class="seo-metric-tag" style="background:#fef3c7; color:#b45309;">दूध होम डिलीवरी</span></td>
+                <td>उत्पाद पेज (products.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">अति-उच्च (High)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="Fresh milk delivery in Malpura" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>ताज़ा गाय और भैंस का दूध मालपुरा ₹70</strong></td>
+                <td><span class="seo-metric-tag" style="background:#fef3c7; color:#b45309;">दूध रेट व खरीदारी</span></td>
+                <td>उत्पाद पेज (products.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">अति-उच्च (High)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="ताज़ा गाय और भैंस का दूध मालपुरा ₹70" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>Pure Desi Ghee in Malpura Tonk</strong></td>
+                <td><span class="seo-metric-tag" style="background:#fce7f3; color:#be185d;">शुद्ध देसी घी</span></td>
+                <td>उत्पाद पेज (products.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">अति-उच्च (High)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="Pure Desi Ghee in Malpura Tonk" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>पारंपरिक शुद्ध देसी घी ₹1200 किलो मालपुरा</strong></td>
+                <td><span class="seo-metric-tag" style="background:#fce7f3; color:#be185d;">शुद्ध देसी घी</span></td>
+                <td>उत्पाद पेज (products.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">उच्च (High)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="पारंपरिक शुद्ध देसी घी ₹1200 किलो मालपुरा" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><strong>Hotel and halwai bulk milk supply Malpura</strong></td>
+                <td><span class="seo-metric-tag" style="background:#ede9fe; color:#6d28d9;">होटल-हलवाई थोक</span></td>
+                <td>थोक पेज (bulk.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">उच्च (B2B)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="Hotel and halwai bulk milk supply Malpura" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><strong>शादी-समारोह हेतु दूध घी सप्लायर मालपुरा</strong></td>
+                <td><span class="seo-metric-tag" style="background:#ede9fe; color:#6d28d9;">कैटरिंग व शादी</span></td>
+                <td>थोक पेज (bulk.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">उच्च (B2B)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="शादी-समारोह हेतु दूध घी सप्लायर मालपुरा" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><strong>Dairy farm in Malpura Tonk Rajasthan</strong></td>
+                <td><span class="seo-metric-tag" style="background:#e0f2fe; color:#0369a1;">फ़ार्म विजिट व खोज</span></td>
+                <td>फ़ार्म पेज (farm.html)</td>
+                <td><span class="seo-metric-tag" style="background:#e2e8f0; color:#475569;">मध्यम</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="Dairy farm in Malpura Tonk Rajasthan" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td><strong>Best dairy shop near me Malpura</strong></td>
+                <td><span class="seo-metric-tag" style="background:#fef3c7; color:#b45309;">नियर मी (Near Me)</span></td>
+                <td>संपर्क पेज (contact.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">अति-उच्च (High)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="Best dairy shop near me Malpura" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td><strong>माँ करणी डेयरी फ़ोन नंबर 8209931769</strong></td>
+                <td><span class="seo-metric-tag" style="background:#dbeafe; color:#1d4ed8;">सीधा संपर्क</span></td>
+                <td>संपर्क पेज (contact.html)</td>
+                <td><span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">अति-उच्च (High)</span></td>
+                <td><button type="button" class="btn-seo btn-seo-outline btn-copy-kw" data-kw="माँ करणी डेयरी फ़ोन नंबर 8209931769" style="padding:4px 10px; font-size:0.8rem;">कॉपी</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         TAB 4: Schema.org Structured Data Generator
+         ==================================================================== -->
+    <div class="seo-tab-pane" id="tab-schema">
+      <div class="seo-card">
+        <h2 class="seo-card-title">🏗️ Schema.org स्ट्रक्चर्ड डेटा जनरेटर व वैलिडेटर (JSON-LD)</h2>
+        <p class="seo-card-desc">गूगल को आपकी दुकान का पता, समय, फोन नंबर और दूध-घी की कीमतें सीधे समझाने के लिए ये कोड उपयोग किए जाते हैं।</p>
+
+        <div class="seo-field-group">
+          <label class="seo-field-label" for="schemaSelector">स्कीमा प्रकार चुनें (Select Schema Type):</label>
+          <select id="schemaSelector" class="seo-select">
+            <option value="local">1. LocalBusiness / DairyStore (दुकान, पता, समय व फोन)</option>
+            <option value="productMilk">2. Product Schema - ताज़ा दूध (₹70/L)</option>
+            <option value="productGhee">3. Product Schema - शुद्ध देसी घी (₹1200/kg)</option>
+            <option value="faq">4. FAQPage Schema (अक्सर पूछे जाने वाले सवाल)</option>
+            <option value="breadcrumb">5. BreadcrumbList Schema (साइट नेविगेशन)</option>
+          </select>
+        </div>
+
+        <div class="code-box-container" style="min-height: 280px;">
+          <button type="button" class="code-box-copy-btn" id="btnCopySchemaCode">📋 Schema JSON-LD कॉपी करें</button>
+          <pre style="margin:0;"><code id="schemaCodeBlock"></code></pre>
+        </div>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
+          <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener" class="btn-seo btn-seo-outline">
+            <span>🧪 Google Rich Results Test पर टेस्ट करें ➔</span>
+          </a>
+          <a href="https://validator.schema.org/" target="_blank" rel="noopener" class="btn-seo btn-seo-outline">
+            <span>🛡️ Schema.org Validator खोलें ➔</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         TAB 5: Robots.txt & Sitemap.xml Manager
+         ==================================================================== -->
+    <div class="seo-tab-pane" id="tab-sitemap">
+      <div class="seo-card">
+        <h2 class="seo-card-title">🗺️ Robots.txt एवं Sitemap.xml मैनेजर</h2>
+        <p class="seo-card-desc">सर्च इंजन क्रॉलर्स (Googlebot) को आपकी वेबसाइट के सभी 6 पेजों को तुरंत इंडेक्स करने के लिए ये फाइल्स लाइव मौजूद हैं।</p>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:24px;">
+          <!-- Sitemap Card -->
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:700; margin:0; color:#15803d;">
+                🗺️ Sitemap.xml (साइटमैप)
+              </h4>
+              <a href="sitemap.xml" target="_blank" class="btn-seo btn-seo-outline" style="padding:4px 10px; font-size:0.8rem;">लाइव देखें ➔</a>
+            </div>
+            <div class="code-box-container" style="height:260px;">
+              <button type="button" class="code-box-copy-btn" id="btnCopySitemap">📋 कॉपी</button>
+              <pre style="margin:0;"><code id="sitemapCodeBlock"></code></pre>
+            </div>
+            <div style="margin-top:10px;">
+              <span style="font-size:0.85rem; color:#15803d; font-weight:600;">✓ स्थिति: सक्रिय (Live on GitHub Pages)</span>
+            </div>
+          </div>
+
+          <!-- Robots.txt Card -->
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:700; margin:0; color:#d97706;">
+                🤖 Robots.txt (सर्च बॉट निर्देश)
+              </h4>
+              <a href="robots.txt" target="_blank" class="btn-seo btn-seo-outline" style="padding:4px 10px; font-size:0.8rem;">लाइव देखें ➔</a>
+            </div>
+            <div class="code-box-container" style="height:260px;">
+              <button type="button" class="code-box-copy-btn" id="btnCopyRobots">📋 कॉपी</button>
+              <pre style="margin:0;"><code id="robotsCodeBlock"></code></pre>
+            </div>
+            <div style="margin-top:10px;">
+              <span style="font-size:0.85rem; color:#15803d; font-weight:600;">✓ स्थिति: सक्रिय (Allow: / With Sitemap Index)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         TAB 6: Google 1st Page Ranking Guide
+         ==================================================================== -->
+    <div class="seo-tab-pane" id="tab-checklist">
+      <div class="seo-card">
+        <h2 class="seo-card-title">🚀 गूगल पर #1 रैंक लाने के लिए 4 ज़रूरी कदम</h2>
+        <p class="seo-card-desc">अपनी डेयरी वेबसाइट को गूगल सर्च और गूगल मैप्स में सबसे ऊपर लाने के लिए ये 4 स्टेप्स पूरे करें:</p>
+
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <!-- Step 1 -->
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:18px 20px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <span style="background:#15803d; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem;">1</span>
+              <h3 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:700; color:#0f172a; margin:0;">
+                Google Search Console में साइटमैप सबमिट करें
+              </h3>
+            </div>
+            <p style="font-size:0.9rem; color:#475569; margin-bottom:12px; line-height:1.5;">
+              1. <a href="https://search.google.com/search-console" target="_blank" rel="noopener" style="color:#15803d; font-weight:600;">Google Search Console</a> खोलें।<br>
+              2. अपनी वेबसाइट <code>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/</code> जोड़ें।<br>
+              3. बाईं ओर "Sitemaps" टैब में जाकर <code>sitemap.xml</code> लिखकर <strong>Submit</strong> दबाएं।
+            </p>
+            <span class="seo-metric-tag" style="background:#dcfce7; color:#166534;">✓ आपकी साइट में sitemap.xml पहले से बना हुआ है</span>
+          </div>
+
+          <!-- Step 2 -->
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:18px 20px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <span style="background:#0284c7; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem;">2</span>
+              <h3 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:700; color:#0f172a; margin:0;">
+                Google Business Profile (गूगल मैप्स) में वेबसाइट लिंक जोड़ें
+              </h3>
+            </div>
+            <p style="font-size:0.9rem; color:#475569; margin-bottom:12px; line-height:1.5;">
+              लोकल मालपुरा के ग्राहकों के लिए गूगल मैप्स पर नाम "माँ करणी दूध डेयरी", फोन नंबर "8209931769" और वेबसाइट का लिंक दर्ज करें। इससे "Dairy near me" सर्च करने वालों को आपकी दुकान सीधे ऊपर दिखेगी।
+            </p>
+            <a href="https://business.google.com/" target="_blank" rel="noopener" class="btn-seo btn-seo-outline" style="padding:6px 14px; font-size:0.85rem;">Google Business Profile खोलें ➔</a>
+          </div>
+
+          <!-- Step 3 -->
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:18px 20px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <span style="background:#d97706; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem;">3</span>
+              <h3 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:700; color:#0f172a; margin:0;">
+                ग्राहकों से 5-Star गूगल रिव्यू प्राप्त करें
+              </h3>
+            </div>
+            <p style="font-size:0.9rem; color:#475569; margin-bottom:6px; line-height:1.5;">
+              गूगल लोकल सर्च में ऊपर आने का सबसे असरदार तरीका है अपने संतुष्ट ग्राहकों से Google Maps पर 5-स्टार रेटिंग और "शुद्ध दूध", "ताज़ा देसी घी मालपुरा" शब्द लिखवाना।
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:18px 20px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <span style="background:#7c3aed; color:#fff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.85rem;">4</span>
+              <h3 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:700; color:#0f172a; margin:0;">
+                Google Tag Manager एवं Meta Pixel एनालिटिक्स ट्रैक करें
+              </h3>
+            </div>
+            <p style="font-size:0.9rem; color:#475569; margin-bottom:6px; line-height:1.5;">
+              वेबसाइट पर <code>GTM-58JJ9RJL</code> और Meta Pixel <code>2574935932945217</code> लाइव जुड़े हुए हैं। जब भी कोई ग्राहक WhatsApp ऑर्डर बटन दबाता है या फोन करता है, तो वह तुरंत ट्रैक हो रहा है।
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Live Toast Notification -->
+  <div class="seo-toast" id="seoToast" role="alert" aria-live="polite">
+    <span>✓ क्लिपबोर्ड पर कॉपी हो गया!</span>
+  </div>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // SEO Data Repository for All Pages
+      const PAGE_DATA = {
+        home: {
+          title: "माँ करणी दूध डेयरी - ताज़ा दूध व शुद्ध देसी घी | Malpura, Rajasthan",
+          desc: "माँ करणी दूध डेयरी मालपुरा - ताज़ा गाय व भैंस का दूध (₹70/L) और शुद्ध देसी घी (₹1200/kg)। मालपुरा शहर में होम डिलीवरी एवं होटल-हलवाई हेतु थोक सप्लाई। फ़ोन 8209931769।",
+          url: "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/",
+          keywords: "Dairy in Malpura, Fresh milk Malpura, Pure desi ghee Malpura, Milk delivery Malpura, Tonk dairy",
+          ogImage: "assets/images/hero-dairy.jpg"
+        },
+        products: {
+          title: "डेयरी उत्पाद रेट लिस्ट - ताज़ा दूध एवं शुद्ध देसी घी | माँ करणी डेयरी",
+          desc: "माँ करणी दूध डेयरी मालपुरा ताज़ा रेट: गाय व भैंस का दूध ₹70/L, शुद्ध देसी घी ₹1200/kg (1kg, 500gm, 250gm)। ऑनलाइन ऑर्डर व होम डिलीवरी उपलब्ध।",
+          url: "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/products.html",
+          keywords: "Milk price Malpura, Pure cow milk 70, Desi ghee price Malpura 1200, Buy ghee online Malpura",
+          ogImage: "assets/images/milk.jpg"
+        },
+        farm: {
+          title: "हमारा प्राकृतिक डेयरी फ़ार्म - स्वस्थ गायें व मुर्रा भैंसें | मालपुरा",
+          desc: "माँ करणी दूध डेयरी का स्वच्छ व प्राकृतिक डेयरी फ़ार्म मालपुरा - स्वस्थ मुर्रा नस्ल भैंसें, देशी गायें, 100% पौष्टिक हरा चारा और कड़े स्वच्छता मानक।",
+          url: "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/farm.html",
+          keywords: "Dairy farm Malpura, Pure milk dairy Tonk, Cow farm Rajasthan, Murrah buffalo farm",
+          ogImage: "assets/images/farm-cows.jpg"
+        },
+        bulk: {
+          title: "होटल व हलवाई थोक सप्लाई (Bulk Dairy Supply) | माँ करणी डेयरी मालपुरा",
+          desc: "होटल, रेस्टोरेंट, हलवाई व शादी-विवाह हेतु शुद्ध दूध एवं शुद्ध देसी घी की नियमित थोक आपूर्ति। आकर्षक थोक दरें व समय पर डिलीवरी। संपर्क: 8209931769।",
+          url: "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/bulk.html",
+          keywords: "Bulk milk supplier Malpura, Halwai dairy supplier, Wholesale ghee Tonk, Wedding dairy supply",
+          ogImage: "assets/images/hero-dairy.jpg"
+        },
+        payment: {
+          title: "सुरक्षित ऑनलाइन पेमेंट व UPI QR कोड | माँ करणी दूध डेयरी",
+          desc: "माँ करणी दूध डेयरी मालपुरा को PhonePe, Google Pay, Paytm, BHIM द्वारा तुरंत ऑनलाइन पेमेंट करें। आधिकारिक UPI ID: 8209931769@upi।",
+          url: "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/payment.html",
+          keywords: "Maa Karni Dairy payment, UPI payment 8209931769@upi, QR code payment Malpura",
+          ogImage: "assets/images/payment-qr.svg"
+        },
+        contact: {
+          title: "संपर्क, दुकान पता व समय - माँ करणी दूध डेयरी | Malpura, Rajasthan",
+          desc: "माँ करणी दूध डेयरी मालपुरा से संपर्क करें: मोबाइल 8209931769, दुकान समय सुबह 6:00 से 9:00 और शाम 6:00 से 8:00 तक। गूगल मैप्स दिशा-निर्देश।",
+          url: "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/contact.html",
+          keywords: "Maa Karni Dairy phone number, Malpura dairy shop address, Milk shop near me Tonk",
+          ogImage: "assets/images/logo.png"
+        }
+      };
+
+      // Schema Definitions
+      const SCHEMAS = {
+        local: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "DairyStore",
+          "name": "Maa Karni Dairy (माँ करणी दूध डेयरी)",
+          "image": "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/assets/images/hero-dairy.jpg",
+          "telephone": "+918209931769",
+          "url": "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/",
+          "priceRange": "₹35 - ₹1200",
+          "servesCuisine": "Fresh Pure Dairy Products",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Main Market",
+            "addressLocality": "Malpura",
+            "addressRegion": "Rajasthan",
+            "postalCode": "304502",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "26.2847",
+            "longitude": "75.3857"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "06:00",
+              "closes": "09:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "18:00",
+              "closes": "20:00"
+            }
+          ]
+        }, null, 2),
+
+        productMilk: JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "ताज़ा गाय व भैंस का दूध (Fresh Cow & Buffalo Milk)",
+          "image": "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/assets/images/milk.jpg",
+          "description": "मालपुरा में रोज़ाना ताज़ा निकाला हुआ शुद्ध गाय और भैंस का पोषक दूध।",
+          "brand": {
+            "@type": "Brand",
+            "name": "Maa Karni Dairy"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/products.html",
+            "priceCurrency": "INR",
+            "price": "70",
+            "priceValidUntil": "2027-12-31",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock"
+          }
+        }, null, 2),
+
+        productGhee: JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "पारंपरिक शुद्ध देशी घी (Pure Desi Ghee)",
+          "image": "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/assets/images/ghee.jpg",
+          "description": "पारंपरिक बिलोना विधि से निर्मित 100% शुद्ध, दानेदार और सुगंधित देशी घी।",
+          "brand": {
+            "@type": "Brand",
+            "name": "Maa Karni Dairy"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/products.html",
+            "priceCurrency": "INR",
+            "price": "1200",
+            "priceValidUntil": "2027-12-31",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock"
+          }
+        }, null, 2),
+
+        faq: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "दूध की क्या रेट है?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "माँ करणी दूध डेयरी पर ताज़ा गाय और भैंस का शुद्ध दूध ₹70 प्रति लीटर उपलब्ध है।"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "शुद्ध देसी घी की क्या कीमत है?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "पारंपरिक विधि से निर्मित शुद्ध देसी घी ₹1200 प्रति किलो है (1kg, 500gm व 250gm पैकिंग)।"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "मालपुरा में होम डिलीवरी कैसे ऑर्डर करें?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "आप सीधे WhatsApp या कॉल पर 8209931769 पर संपर्क करके होम डिलीवरी ऑर्डर कर सकते हैं।"
+              }
+            }
+          ]
+        }, null, 2),
+
+        breadcrumb: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "होम",
+              "item": "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "डेयरी उत्पाद",
+              "item": "https://anandsingh100709-lgtm.github.io/maa-karni-dairy/products.html"
+            }
+          ]
+        }, null, 2)
+      };
+
+      // DOM Elements
+      const pageSelector = document.getElementById('pageSelector');
+      const inputTitle = document.getElementById('inputTitle');
+      const inputDesc = document.getElementById('inputDesc');
+      const inputKeywords = document.getElementById('inputKeywords');
+      const inputCanonical = document.getElementById('inputCanonical');
+      const counterTitle = document.getElementById('counterTitle');
+      const counterDesc = document.getElementById('counterDesc');
+
+      const serpDisplayTitle = document.getElementById('serpDisplayTitle');
+      const serpDisplayDesc = document.getElementById('serpDisplayDesc');
+      const serpDisplayUrl = document.getElementById('serpDisplayUrl');
+      const googleSerpBox = document.getElementById('googleSerpBox');
+
+      const waTitle = document.getElementById('waTitle');
+      const waDesc = document.getElementById('waDesc');
+
+      const metaTagsCode = document.getElementById('metaTagsCode');
+      const ogCodeBlock = document.getElementById('ogCodeBlock');
+      const schemaSelector = document.getElementById('schemaSelector');
+      const schemaCodeBlock = document.getElementById('schemaCodeBlock');
+
+      const sitemapCodeBlock = document.getElementById('sitemapCodeBlock');
+      const robotsCodeBlock = document.getElementById('robotsCodeBlock');
+
+      // Toast Function
+      function showToast(message) {
+        const toast = document.getElementById('seoToast');
+        toast.querySelector('span').textContent = message || '✓ क्लिपबोर्ड पर कॉपी हो गया!';
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2800);
+      }
+
+      function copyText(text, msg) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(() => showToast(msg));
+        } else {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showToast(msg);
+        }
+      }
+
+      // Update Character Meters
+      function updateCounters() {
+        const tLen = inputTitle.value.length;
+        counterTitle.textContent = `${tLen} / 60 अक्षर`;
+        counterTitle.className = 'char-counter ' + (tLen >= 45 && tLen <= 65 ? 'valid' : (tLen > 65 ? 'danger' : 'warn'));
+
+        const dLen = inputDesc.value.length;
+        counterDesc.textContent = `${dLen} / 160 अक्षर`;
+        counterDesc.className = 'char-counter ' + (dLen >= 120 && dLen <= 160 ? 'valid' : (dLen > 160 ? 'danger' : 'warn'));
+      }
+
+      // Update Generated HTML Meta Box
+      function updateMetaCode() {
+        const title = inputTitle.value.trim();
+        const desc = inputDesc.value.trim();
+        const kw = inputKeywords.value.trim();
+        const canon = inputCanonical.value.trim();
+
+        const html = `<!-- SEO Meta Tags -->
+<title>${title}</title>
+<meta name="description" content="${desc}">
+<meta name="keywords" content="${kw}">
+<link rel="canonical" href="${canon}">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${desc}">
+<meta property="og:url" content="${canon}">
+<meta property="og:image" content="https://anandsingh100709-lgtm.github.io/maa-karni-dairy/assets/images/hero-dairy.jpg">`;
+
+        metaTagsCode.textContent = html;
+        ogCodeBlock.textContent = html;
+      }
+
+      // Sync form to previews
+      function syncPreviews() {
+        const title = inputTitle.value.trim();
+        const desc = inputDesc.value.trim();
+        const url = inputCanonical.value.trim();
+
+        serpDisplayTitle.textContent = title;
+        serpDisplayDesc.textContent = desc;
+        serpDisplayUrl.textContent = url;
+
+        waTitle.textContent = title;
+        waDesc.textContent = desc;
+
+        updateCounters();
+        updateMetaCode();
+      }
+
+      // Load Selected Page Data
+      function loadPage(pageKey) {
+        const p = PAGE_DATA[pageKey] || PAGE_DATA.home;
+        inputTitle.value = p.title;
+        inputDesc.value = p.desc;
+        inputKeywords.value = p.keywords;
+        inputCanonical.value = p.url;
+        syncPreviews();
+      }
+
+      // Page Dropdown Listener
+      pageSelector.addEventListener('change', (e) => {
+        loadPage(e.target.value);
+      });
+
+      inputTitle.addEventListener('input', syncPreviews);
+      inputDesc.addEventListener('input', syncPreviews);
+      inputKeywords.addEventListener('input', syncPreviews);
+      inputCanonical.addEventListener('input', syncPreviews);
+
+      // Desktop / Mobile SERP Switcher
+      document.getElementById('btnSerpDesktop').addEventListener('click', function() {
+        googleSerpBox.classList.remove('mobile-view');
+        this.className = 'btn-seo';
+        document.getElementById('btnSerpMobile').className = 'btn-seo btn-seo-outline';
+      });
+      document.getElementById('btnSerpMobile').addEventListener('click', function() {
+        googleSerpBox.classList.add('mobile-view');
+        this.className = 'btn-seo';
+        document.getElementById('btnSerpDesktop').className = 'btn-seo btn-seo-outline';
+      });
+
+      // Tabs Logic
+      const tabBtns = document.querySelectorAll('.seo-tab-btn');
+      const tabPanes = document.querySelectorAll('.seo-tab-pane');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-tab');
+          tabBtns.forEach(b => b.classList.remove('active'));
+          tabPanes.forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          document.getElementById(targetId).classList.add('active');
+        });
+      });
+
+      // Copy Meta Tags Button
+      document.getElementById('btnCopyMetaTags').addEventListener('click', () => {
+        copyText(metaTagsCode.textContent, 'HTML मेटा टैग्स कॉपी हो गए!');
+      });
+      document.getElementById('btnCopyOgCode').addEventListener('click', () => {
+        copyText(ogCodeBlock.textContent, 'Open Graph कोड कॉपी हो गया!');
+      });
+
+      // WhatsApp Share Test Button
+      document.getElementById('btnShareTestWa').addEventListener('click', () => {
+        const shareUrl = `https://wa.me/?text=${encodeURIComponent(inputTitle.value + '\n' + inputCanonical.value)}`;
+        window.open(shareUrl, '_blank');
+      });
+
+      // Keywords Copy
+      document.querySelectorAll('.btn-copy-kw').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const kw = btn.getAttribute('data-kw');
+          copyText(kw, `"${kw}" कॉपी हो गया!`);
+        });
+      });
+
+      document.getElementById('btnCopyAllKeywords').addEventListener('click', () => {
+        const allKw = Array.from(document.querySelectorAll('.btn-copy-kw'))
+          .map(b => b.getAttribute('data-kw'))
+          .join(', ');
+        copyText(allKw, 'सभी 10 कीवर्ड्स एक साथ कॉपी हो गए!');
+      });
+
+      // Schema Selector
+      function updateSchemaCode() {
+        const sKey = schemaSelector.value;
+        const code = SCHEMAS[sKey] || SCHEMAS.local;
+        schemaCodeBlock.textContent = `<script type="application/ld+json">\n${code}\n<\/script>`;
+      }
+      schemaSelector.addEventListener('change', updateSchemaCode);
+      document.getElementById('btnCopySchemaCode').addEventListener('click', () => {
+        copyText(schemaCodeBlock.textContent, 'Schema JSON-LD कोड कॉपी हो गया!');
+      });
+
+      // Load Sitemap & Robots into code boxes
+      fetch('sitemap.xml')
+        .then(r => r.text())
+        .then(t => { sitemapCodeBlock.textContent = t; })
+        .catch(() => {
+          sitemapCodeBlock.textContent = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url>\n    <loc>https://anandsingh100709-lgtm.github.io/maa-karni-dairy/</loc>\n    <priority>1.0</priority>\n  </url>\n</urlset>`;
+        });
+
+      fetch('robots.txt')
+        .then(r => r.text())
+        .then(t => { robotsCodeBlock.textContent = t; })
+        .catch(() => {
+          robotsCodeBlock.textContent = `User-agent: *\nAllow: /\nSitemap: https://anandsingh100709-lgtm.github.io/maa-karni-dairy/sitemap.xml`;
+        });
+
+      document.getElementById('btnCopySitemap').addEventListener('click', () => {
+        copyText(sitemapCodeBlock.textContent, 'Sitemap.xml कॉपी हो गया!');
+      });
+      document.getElementById('btnCopyRobots').addEventListener('click', () => {
+        copyText(robotsCodeBlock.textContent, 'Robots.txt कॉपी हो गया!');
+      });
+
+      // Initialize
+      loadPage('home');
+      updateSchemaCode();
+
+    })();
+  </script>
+</body>
+</html>

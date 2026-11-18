@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap for Maa Karni Dairy Malpura
+Sitemap: https://anandsingh100709-lgtm.github.io/maa-karni-dairy/sitemap.xml
